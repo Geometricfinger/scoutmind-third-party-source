@@ -1,0 +1,62 @@
+{
+  "binary": {
+    "distributed_in": "ScoutMind for Windows (Microsoft Store MSIX), installed as bin/ffmpeg.exe; the same file ships in V1 1.0.119.0 and is pinned by packaging/hunter_cam.spec",
+    "archive_url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n9.0-latest-win64-gpl-9.0.zip",
+    "archive_release": "BtbN/FFmpeg-Builds release 'latest' = 'Latest Auto-Build (2026-09-26 13:03)', published 2026-09-26T13:22:38Z; asset created 2026-09-26T13:22:27Z; GitHub asset digest sha256:01dead67343ae44c049c42fb9adc9143b95a068667a0c7acce3dd8787f53b743",
+    "archive_note": "BtbN rebuilds 'latest' daily and prunes dated tags after about two weeks, so this URL will stop serving this file; ScoutMind keeps a private copy and verifies its SHA-256 when packaging.",
+    "dated_archive": {
+      "name": "ffmpeg-n9.0.2-10-g51c4a23d74-win64-gpl-9.0.zip",
+      "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2026-09-26-13-03/ffmpeg-n9.0.2-10-g51c4a23d74-win64-gpl-9.0.zip",
+      "sha256": "1f09d6d90fb9f47cfb588c6b85e2a2c23e991b5cde90027face382c402c3649d",
+      "size": 194034388,
+      "ffmpeg_exe_sha256": "b04aa739de5b1d3e89b1c9fe4862be81d6dbb61558decee0d68cdc85b03eb511",
+      "note": "verified 2026-09-27: the dated asset's bin/ffmpeg.exe is byte-identical to the one in the 'latest' repack"
+    }
+  },
+  "builder": {
+    "tag": "autobuild-2026-09-26-13-03",
+    "tag_commit_verified": "refs/tags/autobuild-2026-09-26-13-03 -> 58cc05f33c20e3ead0ce876b72531ab482d0f981 (GitHub API, 2026-09-27)",
+    "workflow_run": {
+      "id": 36241274776,
+      "url": "https://github.com/BtbN/FFmpeg-Builds/actions/runs/36241274776",
+      "workflow": "Build FFmpeg (.github/workflows/build.yml)",
+      "event": "schedule",
+      "head_sha": "58cc05f33c20e3ead0ce876b72531ab482d0f981",
+      "created_at": "2026-09-26T12:14:05Z",
+      "completed_at": "2026-09-26T13:22:46Z",
+      "job": "Build ffmpeg (win64, gpl 9.0)",
+      "job_id": 108404385202,
+      "job_started_at": "2026-09-26T12:29:47Z",
+      "job_completed_at": "2026-09-26T12:40:10Z",
+      "image_job": "Build target-variant image (ubuntu-latest, win64, gpl 9.0)",
+      "image_job_id": 108402832520
+    },
+    "later_commit_not_used": "54e192626545d0234b2a1383a34a29169cf52877 (2026-09-26T13:49:53Z, push-triggered run 36246469426) - after the release; push runs do not publish releases"
+  },
+  "extra_inputs": [
+    {
+      "name": "libvpl-pr198-9cb2dc56.patch",
+      "for_stage": "onevpl",
+      "url": "https://github.com/intel/libvpl/commit/9cb2dc5643480bde33909e11b0ec1ddeb6339f45.patch",
+      "sha256": "37cfec93ffd6cdc804d1aa576069d843db590c735165e50a058ad692103a8e26",
+      "license": "MIT",
+      "reason": "scripts.d/50-onevpl.sh runs `curl -fL https://github.com/intel/libvpl/pull/198.patch | git am` during its build. PR #198 has one commit (9cb2dc56, 2026-09-01) and was last updated 2026-09-23, before the build; on 2026-09-27 the PR patch and this commit patch are byte-identical."
+    },
+    {
+      "name": "cc-1.5.1.crate",
+      "for_stage": "rav1e",
+      "url": "https://static.crates.io/crates/cc/cc-1.5.1.crate",
+      "sha256": "f360145194ee8e21db5ee7f3fcd4fe52210864c75c985dae33218202c8bbe040",
+      "license": "MIT OR Apache-2.0",
+      "reason": "scripts.d/50-rav1e.sh runs `cargo update cc` at build time, which moves the lockfile's cc 1.2.26 to the newest compatible 1.x on crates.io. The newest 1.x published before the job started (2026-09-26T12:29:47Z) is 1.5.1 (published 2026-09-25T13:33Z). cc is a build-script helper and is not linked into ffmpeg.exe; included for completeness. `cargo update cc` can also refresh cc's own small dependencies (jobserver, shlex, find-msvc-tools); those are build-time only as well."
+    }
+  ],
+  "known_gaps": [
+    "Compilers are identified from strings embedded in the binary rather than from a pinned image: BtbN's images install Ubuntu 26.04 packages, `rustup` stable and a crosstool-NG clone at image-build time. The binary itself names GCC 16.2.0 built by crosstool-NG 1.29.0.7_b1a94f6 and rustc commit 48a229ceaefd (Rust 1.98.1); those sources are included under toolchain/.",
+    "General-purpose build tools (Ubuntu packages, cmake, meson, nasm, cargo-c, binutils, the compiler's own host libraries gmp/mpfr/mpc/isl) are not part of the linked work and are not included by default (GPLv3 section 1 excludes general-purpose tools used unmodified). binutils 2.47 can be added with --with-optional-toolchain.",
+    "BtbN's CI reuses Docker layer caches (cache-from). A stage layer is only reused when its Dockerfile instruction and mounted stage script/download cache are unchanged, so a cached layer was built from the same pinned source recorded here.",
+    "`.git` metadata is removed from every fetched tree so the archive is byte-reproducible; each stage archive's SOURCE-REVISIONS.scoutmind.txt keeps the commit and remote of every repository. Some projects derive cosmetic version strings from git metadata at build time (for example x264's build number).",
+    "rav1e: `cargo update cc` re-resolved the cc build dependency at build time (see extra_inputs: best determination cc 1.5.1). All crates linked into ffmpeg.exe come from rav1e's committed Cargo.lock, which the archive vendors with checksum verification.",
+    "Only bin/ffmpeg.exe is redistributed by ScoutMind (ffprobe.exe and ffplay.exe from the same zip are not shipped); the same sources cover all three."
+  ]
+}

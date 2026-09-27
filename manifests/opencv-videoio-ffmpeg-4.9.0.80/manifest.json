@@ -1,0 +1,248 @@
+{
+  "schema": "scoutmind.opencv-ffmpeg-plugin-source/1",
+  "generated_at": "2026-09-27T08:22:23Z",
+  "generated_by": "scripts/assemble_opencv_ffmpeg_plugin_source.py build-manifest",
+  "binary": {
+    "shipped_as": "cv2/opencv_videoio_ffmpeg490_64.dll",
+    "distributed_in": "ScoutMind for Windows V1 1.0.100.0 (live) and 1.0.119.0 (submitted): the same DLL (same SHA-256) was read from both MSIX packages on 2026-09-27. It is copied unmodified from the PyPI wheel below by PyInstaller's cv2 hook. The V2 Windows build installs the same wheel (requirements.txt, .github/workflows/build-standalone.yml: opencv-python-headless==4.9.0.80)",
+    "wheel": {
+      "name": "opencv_python_headless-4.9.0.80-cp37-abi3-win_amd64.whl",
+      "sha256": "a8056c2cb37cd65dfcdf4153ca16f7362afcf3a50d600d6bb69c660fc61ee29c",
+      "sha256_source": "https://pypi.org/pypi/opencv-python-headless/4.9.0.80/json (uploaded 2023-12-31T13:34:39Z)",
+      "url": "https://pypi.org/project/opencv-python-headless/4.9.0.80/"
+    },
+    "opencv_pin": {
+      "where": "opencv 4.9.0 (dad8af6b17f8e60d7b95a1203a1b4d22f56574cf) 3rdparty/ffmpeg/ffmpeg.cmake",
+      "binaries_branch": "ffmpeg/4.x_20231225",
+      "binaries_commit": "fbac408a47977ee4265f39e7659d33f1dfef5216",
+      "built_for_opencv_commit": "62f1a7410d5e5e03d6cee5c95549bf61d5ee98db",
+      "file_hash_bin64_md5": "cb4db51ee9a423e6168b9d08bee61efc"
+    },
+    "inspected": {
+      "container": "opencv_python_headless-4.9.0.80-cp37-abi3-win_amd64.whl",
+      "container_sha256": "a8056c2cb37cd65dfcdf4153ca16f7362afcf3a50d600d6bb69c660fc61ee29c",
+      "member": "cv2/opencv_videoio_ffmpeg490_64.dll",
+      "sha256": "969a3219854b6b654a7e5a89ccdb87f3cc143af5e43858eea0ad9275237ea406",
+      "md5": "cb4db51ee9a423e6168b9d08bee61efc",
+      "size": 26314752,
+      "ffmpeg_version": "4.4.4",
+      "license_label": "LGPL version 2.1 or later",
+      "ffmpeg_configure": [
+        "--enable-cross-compile",
+        "--arch=x86_64",
+        "--target-os=mingw32",
+        "--cross-prefix=x86_64-w64-mingw32-",
+        "--pkg-config=pkg-config",
+        "--enable-static",
+        "--enable-avresample",
+        "--enable-w32threads",
+        "--enable-libopenh264",
+        "--enable-libvpx",
+        "--disable-filters",
+        "--disable-bsfs",
+        "--disable-programs",
+        "--disable-debug",
+        "--disable-cuda",
+        "--disable-cuvid",
+        "--disable-nvenc",
+        "--enable-libaom",
+        "--prefix=/build/ffmpeg_x86_64/install"
+      ],
+      "libvpx_configure": [
+        "--target=x86_64-win64-gcc",
+        "--disable-examples",
+        "--disable-unit-tests",
+        "--disable-install-bins",
+        "--disable-docs",
+        "--disable-shared",
+        "--enable-static",
+        "--enable-vp8",
+        "--enable-vp9",
+        "--disable-multithread",
+        "--prefix=/build/libvpx_x64/install"
+      ],
+      "libavcodec": "Lavc58.134.100",
+      "contains_gpl_flag": false,
+      "contains_nonfree_flag": false,
+      "mingw_runtime": true,
+      "winpthreads": true,
+      "opencv_version": "4.9.0-pre",
+      "build_timestamp": "2023-12-25T13:48:41Z",
+      "cxx_compiler": "/usr/bin/x86_64-w64-mingw32-g++-posix  (ver 9.3.0)",
+      "opencv_modules_built": "core imgcodecs imgproc videoio",
+      "zlib": "build (ver 1.3)"
+    }
+  },
+  "upstream_source_package": {
+    "what": "OpenCV's own source package for these binaries: opencv_3rdparty build_update.sh commits the output of ffmpeg/archive_src.sh to the branch <binaries branch>_src",
+    "repo": "https://github.com/opencv/opencv_3rdparty.git",
+    "branch": "ffmpeg/4.x_20231225_src",
+    "commit": "c25d75348eb02bda9e802ed02865b8aa27efa40f",
+    "parent_commit": "fbac408a47977ee4265f39e7659d33f1dfef5216",
+    "path": "sources",
+    "license": "per file (see the components that verify each file)"
+  },
+  "components": [
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "version": "n4.4.4",
+      "repo": "https://github.com/FFmpeg/FFmpeg.git",
+      "mirrors": [
+        "https://git.ffmpeg.org/ffmpeg.git"
+      ],
+      "commit": "71fb6132637a2a430375c24afc381fff8b854fe7",
+      "tag": "n4.4.4",
+      "license": "LGPL-2.1-or-later (as configured: no --enable-gpl, no --enable-version3, no --enable-nonfree)",
+      "role": "statically linked into the DLL (libavcodec, libavformat, libavutil, libswscale, libswresample, libavresample, libavdevice)",
+      "package": false,
+      "verifies_upstream": "build/ffmpeg/ffmpeg-src-n4.4.4.tar.xz",
+      "license_files_to_top": {
+        "COPYING.LGPLv2.1": "FFmpeg-COPYING.LGPLv2.1",
+        "LICENSE.md": "FFmpeg-LICENSE.md"
+      }
+    },
+    {
+      "id": "libvpx",
+      "name": "libvpx",
+      "version": "v1.13.1",
+      "repo": "https://chromium.googlesource.com/webm/libvpx.git",
+      "commit": "10b9492dcf05b652e2e4b370e205bd605d421972",
+      "tag": "v1.13.1",
+      "license": "BSD-3-Clause (plus the WebM additional IP rights grant in PATENTS)",
+      "role": "statically linked into the DLL",
+      "package": false,
+      "verifies_upstream": "build/libvpx/libvpx-src-v1.13.1.tar.xz"
+    },
+    {
+      "id": "aom",
+      "name": "libaom",
+      "version": "v3.8.0",
+      "repo": "https://aomedia.googlesource.com/aom",
+      "commit": "b681eac83963950afc7be55df56c22fa5210aaa2",
+      "tag": "v3.8.0",
+      "license": "BSD-2-Clause (plus AOMedia Patent License 1.0)",
+      "role": "statically linked into the DLL",
+      "package": false,
+      "verifies_upstream": "build/aom/aom-src-v3.8.0.tar.xz"
+    },
+    {
+      "id": "openh264-api-headers",
+      "name": "OpenH264 API headers",
+      "version": "v1.8.0",
+      "repo": "https://github.com/cisco/openh264.git",
+      "commit": "6fe15a6b82d492bebe388c55b7ee5131208e7334",
+      "tag": "v1.8.0",
+      "paths": [
+        "codec/api/svc",
+        "LICENSE"
+      ],
+      "license": "BSD-2-Clause",
+      "role": "API headers only, compiled into OpenCV's openh264_wrapper (a run-time loader); no Cisco OpenH264 binary is bundled",
+      "package": false,
+      "verifies_upstream": "build/openh264/openh264-api-headers-v1.8.0.tar.xz"
+    },
+    {
+      "id": "opencv-62f1a7410d5e",
+      "name": "OpenCV (the commit the plugin was built from)",
+      "version": "4.9.0-pre (4.x at 62f1a7410d5e)",
+      "repo": "https://github.com/opencv/opencv.git",
+      "commit": "62f1a7410d5e5e03d6cee5c95549bf61d5ee98db",
+      "license": "Apache-2.0 (bundled 3rdparty/zlib: Zlib; 3rdparty/flatbuffers: Apache-2.0)",
+      "role": "statically linked into the DLL: modules core, imgcodecs, imgproc, videoio, the plugin project modules/videoio/misc/plugin_ffmpeg, and 3rdparty/zlib 1.3. OpenCV's own source package includes only modules/videoio/src/*ffmpeg*.hpp; the full tree is included here so the DLL can be rebuilt and relinked against a modified FFmpeg (LGPL-2.1 section 6)",
+      "package": true,
+      "verifies_upstream": "opencv/opencv-videoio-ffmpeg.tar.xz",
+      "verify_globs": [
+        "modules/videoio/src/*ffmpeg*.hpp",
+        "LICENSE"
+      ]
+    },
+    {
+      "id": "opencv_3rdparty-fbac408a4797",
+      "name": "opencv_3rdparty build scripts (the binaries commit, without the prebuilt DLLs)",
+      "version": "ffmpeg/4.x_20231225",
+      "repo": "https://github.com/opencv/opencv_3rdparty.git",
+      "commit": "fbac408a47977ee4265f39e7659d33f1dfef5216",
+      "exclude": [
+        "ffmpeg/*.dll"
+      ],
+      "license": "Apache-2.0 / BSD-3-Clause style (OpenCV project scripts); license.txt carries FFmpeg's notice",
+      "role": "the scripts used to control compilation: download_src.sh, make_mingw.sh, build_videoio_plugin.sh, the Docker image, mingw toolchain files, opencv_ffmpeg.rc and the openh264 loader wrapper",
+      "package": true,
+      "verifies_upstream": "opencv_ffmpeg.tar.xz"
+    },
+    {
+      "id": "opencv-python-headless-4.9.0.80-sdist",
+      "name": "opencv-python-headless 4.9.0.80 source distribution (OpenCV 4.9.0 + the wheel build scripts)",
+      "version": "4.9.0.80",
+      "url": "https://files.pythonhosted.org/packages/3d/b2/c308bc696bf5d75304175c62222ec8af9a6d5cfe36c14f19f15ea9d1a132/opencv-python-headless-4.9.0.80.tar.gz",
+      "sha256": "71a4cd8cf7c37122901d8e81295db7fb188730e33a0e40039a4e59c1030b0958",
+      "sha256_source": "PyPI JSON API",
+      "license": "Apache-2.0 (OpenCV and opencv-python); third-party parts under their own licences, see LICENSE-3RD-PARTY.txt",
+      "role": "for completeness: source of cv2.pyd (OpenCV 4.9.0, dad8af6b) and of the wheel that ships the DLL (opencv-python tag 80, 8ad8ec1b)",
+      "dest": "sources"
+    },
+    {
+      "id": "gcc-9.3.0",
+      "name": "GCC 9.3.0",
+      "version": "9.3.0",
+      "url": "https://ftp.gnu.org/gnu/gcc/gcc-9.3.0/gcc-9.3.0.tar.xz",
+      "sha256": "71e197867611f6054aa1119b13a0c0abac12834765fe2d81f35ac57f84f742d1",
+      "sha256_source": "crosstool-ng b0c0005f8a05 packages/gcc/9.3.0/chksum",
+      "license": "GPL-3.0-or-later WITH GCC-exception-3.1 (runtime libraries)",
+      "role": "toolchain: the DLL links libgcc and libstdc++ statically (-static-libgcc -static-libstdc++); OpenCV's build info names x86_64-w64-mingw32-g++-posix ver 9.3.0 (Ubuntu 20.04 gcc-mingw-w64). Ubuntu's gcc-9 patch set is not included; the runtime exception covers these libraries",
+      "dest": "toolchain"
+    },
+    {
+      "id": "gcc-mingw-w64-22~exp1ubuntu4",
+      "name": "Ubuntu 20.04 gcc-mingw-w64 source package (packaging of the cross compiler)",
+      "version": "22~exp1ubuntu4",
+      "files": [
+        {
+          "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/gcc-mingw-w64/22~exp1ubuntu4/gcc-mingw-w64_22~exp1ubuntu4.dsc",
+          "sha256": "a0739f80eabb8937ac24d4c5a99d8159c148b94ea298003675dd5328c95acbd6",
+          "sha256_source": "first fetch 2026-09-27 (the .dsc is OpenPGP-signed by the Ubuntu uploader; the signature was not checked)"
+        },
+        {
+          "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/gcc-mingw-w64/22~exp1ubuntu4/gcc-mingw-w64_22~exp1ubuntu4.tar.xz",
+          "sha256": "405f24267b210c70062e3bbf29ffa757945caf44b7575ac15ef1bdc8d55d65d8",
+          "sha256_source": "the .dsc Checksums-Sha256"
+        }
+      ],
+      "license": "GPL-3.0-or-later (packaging scripts)",
+      "role": "toolchain packaging; binary version 9.3.0-7ubuntu1+22~exp1ubuntu4 or its 9.3.0-10ubuntu1 rebuild (the DLL records only 'ver 9.3.0')",
+      "dest": "toolchain/ubuntu-focal-gcc-mingw-w64"
+    },
+    {
+      "id": "mingw-w64-7.0.0-2",
+      "name": "Ubuntu 20.04 mingw-w64 source package (CRT, headers, winpthreads)",
+      "version": "7.0.0-2",
+      "files": [
+        {
+          "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/mingw-w64/7.0.0-2/mingw-w64_7.0.0-2.dsc",
+          "sha256": "d98229bafa9f231b709c76fd4a461478af6547cbf8e6aa948cf1e70c79a0dba4",
+          "sha256_source": "first fetch 2026-09-27 (the .dsc is OpenPGP-signed by the Ubuntu uploader; the signature was not checked)"
+        },
+        {
+          "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/mingw-w64/7.0.0-2/mingw-w64_7.0.0.orig.tar.bz2",
+          "sha256": "aa20dfff3596f08a7f427aab74315a6cb80c2b086b4a107ed35af02f9496b628",
+          "sha256_source": "the .dsc Checksums-Sha256"
+        },
+        {
+          "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/mingw-w64/7.0.0-2/mingw-w64_7.0.0-2.debian.tar.xz",
+          "sha256": "8c46c31fa99e351d6b1287cad3976a52805bea73d0bbc1f66c5f928498d525b7",
+          "sha256_source": "the .dsc Checksums-Sha256"
+        }
+      ],
+      "license": "ZPL-2.1 AND MIT AND LicenseRef-public-domain (see COPYING.MinGW-w64-runtime)",
+      "role": "toolchain runtime statically linked into the DLL (mingw-w64 CRT startup code and winpthreads; the DLL contains 'Mingw-w64 runtime failure' and winpthreads/src/rwlock.c)",
+      "dest": "toolchain/ubuntu-focal-mingw-w64"
+    }
+  ],
+  "known_gaps": [
+    "OpenCV built the DLL in an ubuntu:20.04 Docker image (ffmpeg/docker/Dockerfile) with apt packages as of 2023-12-25; the exact Ubuntu package revisions are inferred from what Ubuntu 20.04 published (gcc-mingw-w64 22~exp1ubuntu4, mingw-w64 7.0.0-2), not read from a build log. The DLL itself names only 'x86_64-w64-mingw32-g++-posix (ver 9.3.0)'.",
+    "General-purpose build tools (cmake, ninja, nasm, yasm, binutils-mingw-w64, pkg-config) are not included; they are not part of the linked work.",
+    "OpenCV's source package archives were produced by `git archive` and are shipped here byte-for-byte; each was checked file-by-file against an independent checkout of the pinned revision (see manifest.json -> assembly.results -> verification).",
+    "The 32-bit opencv_videoio_ffmpeg.dll that OpenCV builds from the same sources is not shipped by ScoutMind; the same sources cover it."
+  ]
+}

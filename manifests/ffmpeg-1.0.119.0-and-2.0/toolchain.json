@@ -1,0 +1,41 @@
+[
+  {
+    "name": "gcc",
+    "version": "16.2.0",
+    "role": "runtime linked into ffmpeg.exe (libgcc, libstdc++, libgomp) + cross compiler",
+    "license": "GPL-3.0-or-later WITH GCC-exception-3.1 (runtime libraries)",
+    "url": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz",
+    "sha256": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e",
+    "sha256_source": "crosstool-ng b1a94f65c518 packages/gcc/16.2.0/chksum",
+    "evidence": "binary contains 'GCC: (crosstool-NG 1.29.0.7_b1a94f6) 16.2.0'; images/base-win64/ct-ng-config CT_GCC_VERSION=16.2.0; configure uses --extra-libs=-lgomp and CFLAGS -static-libgcc -static-libstdc++"
+  },
+  {
+    "name": "crosstool-ng",
+    "version": "1.29.0.7_b1a94f6",
+    "role": "toolchain build recipe (applies packages/gcc/16.2.0/*.patch to GCC)",
+    "license": "GPL-2.0 (crosstool-NG scripts; bundled patches carry their own terms - see COPYING in the tree)",
+    "repo": "https://github.com/crosstool-ng/crosstool-ng.git",
+    "commit": "b1a94f65c5187d99037a4e2f57aefbdf995a9677",
+    "evidence": "embedded 'crosstool-NG 1.29.0.7_b1a94f6'; images/base-win64/Dockerfile clones crosstool-ng and builds with ct-ng-config"
+  },
+  {
+    "name": "rust-src",
+    "version": "1.98.1",
+    "role": "Rust standard library linked into ffmpeg.exe via the rav1e and librsvg static libraries",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://static.rust-lang.org/dist/rust-src-1.98.1.tar.xz",
+    "sha256": "5c846ebcebcc7e2e0777a4cdaa12051691593f16a7e94edbae5e6241cc62d98c",
+    "sha256_source": "https://static.rust-lang.org/dist/rust-src-1.98.1.tar.xz.sha256",
+    "evidence": "binary contains /rustc/48a229ceaefd4985c50990b14116b6d856af0985/ paths; that rust-lang/rust commit's src/version is 1.98.1"
+  },
+  {
+    "name": "binutils",
+    "version": "2.47",
+    "role": "assembler/linker (general-purpose build tool; not linked into the binary)",
+    "license": "GPL-3.0-or-later",
+    "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.47.tar.xz",
+    "sha256": "154ab23b60070e8f27013c22977f1129425d67d1e8acd6e13010e617811e4cff",
+    "sha256_source": "crosstool-ng b1a94f65c518 packages/binutils/2.47/chksum",
+    "optional": true
+  }
+]

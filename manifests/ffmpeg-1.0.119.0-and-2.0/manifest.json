@@ -1,0 +1,2592 @@
+{
+  "schema": "scoutmind.ffmpeg-corresponding-source/1",
+  "generated_at": "2026-09-27T07:03:15Z",
+  "generated_by": "scripts/assemble_ffmpeg_corresponding_source.py build-manifest",
+  "binary": {
+    "archive": "ffmpeg-n9.0-latest-win64-gpl-9.0.zip",
+    "archive_sha256": "01dead67343ae44c049c42fb9adc9143b95a068667a0c7acce3dd8787f53b743",
+    "archive_size": 194032660,
+    "member": "ffmpeg-n9.0-latest-win64-gpl-9.0/bin/ffmpeg.exe",
+    "member_date": "2026-09-26T12:39:10 (zip local time)",
+    "sha256": "b04aa739de5b1d3e89b1c9fe4862be81d6dbb61558decee0d68cdc85b03eb511",
+    "size": 165155328,
+    "version": "n9.0.2-10-g51c4a23d74-20260926",
+    "license_label": "GPL version 3 or later",
+    "configure": [
+      "--prefix=/ffbuild/prefix",
+      "--pkg-config-flags=--static",
+      "--pkg-config=pkg-config",
+      "--cross-prefix=x86_64-w64-mingw32-",
+      "--arch=x86_64",
+      "--target-os=mingw32",
+      "--enable-gpl",
+      "--enable-version3",
+      "--disable-debug",
+      "--disable-w32threads",
+      "--enable-pthreads",
+      "--enable-iconv",
+      "--enable-zlib",
+      "--enable-libxml2",
+      "--enable-libvmaf",
+      "--disable-libxcb",
+      "--disable-xlib",
+      "--enable-fontconfig",
+      "--enable-libharfbuzz",
+      "--enable-libfreetype",
+      "--enable-libfribidi",
+      "--enable-vulkan",
+      "--enable-libdav1d",
+      "--enable-libvorbis",
+      "--enable-librav1e",
+      "--enable-librsvg",
+      "--disable-libpulse",
+      "--enable-gmp",
+      "--enable-lzma",
+      "--enable-liblcevc-dec",
+      "--enable-opencl",
+      "--enable-amf",
+      "--enable-libaom",
+      "--enable-avisynth",
+      "--enable-chromaprint",
+      "--enable-libdavs2",
+      "--enable-libdvdread",
+      "--enable-libdvdnav",
+      "--disable-libfdk-aac",
+      "--enable-ffnvcodec",
+      "--enable-cuda-llvm",
+      "--enable-frei0r",
+      "--enable-libgme",
+      "--enable-libkvazaar",
+      "--enable-libaribb24",
+      "--enable-libaribcaption",
+      "--enable-libass",
+      "--enable-libbluray",
+      "--enable-libjxl",
+      "--enable-libmp3lame",
+      "--enable-libopus",
+      "--enable-libplacebo",
+      "--enable-librist",
+      "--enable-libssh",
+      "--enable-libtheora",
+      "--enable-libvpx",
+      "--enable-libwebp",
+      "--enable-libzmq",
+      "--enable-lv2",
+      "--enable-libvpl",
+      "--enable-openal",
+      "--enable-liboapv",
+      "--enable-libopencore-amrnb",
+      "--enable-libopencore-amrwb",
+      "--enable-libopenh264",
+      "--enable-libopenjpeg",
+      "--enable-libopenmpt",
+      "--enable-librubberband",
+      "--enable-schannel",
+      "--enable-sdl2",
+      "--enable-libsnappy",
+      "--enable-libsoxr",
+      "--enable-libsrt",
+      "--enable-libsvtav1",
+      "--enable-libtwolame",
+      "--enable-libuavs3d",
+      "--disable-libdrm",
+      "--enable-vaapi",
+      "--enable-libvidstab",
+      "--enable-libvvenc",
+      "--disable-whisper",
+      "--enable-libx264",
+      "--enable-libx265",
+      "--enable-libxavs2",
+      "--enable-libxvid",
+      "--enable-libzimg",
+      "--enable-libzvbi",
+      "--extra-cflags=-DLIBTWOLAME_STATIC",
+      "--extra-cxxflags=",
+      "--extra-libs=-lgomp",
+      "--extra-ldflags=-pthread",
+      "--extra-ldexeflags=",
+      "--cc=x86_64-w64-mingw32-gcc",
+      "--cxx=x86_64-w64-mingw32-g++",
+      "--ar=x86_64-w64-mingw32-gcc-ar",
+      "--ranlib=x86_64-w64-mingw32-gcc-ranlib",
+      "--nm=x86_64-w64-mingw32-gcc-nm",
+      "--extra-version=20260926"
+    ],
+    "embedded_gcc": [
+      "GCC: (crosstool-NG 1.29.0.7_b1a94f6) 16.2.0"
+    ],
+    "embedded_rustc_commits": [
+      "48a229ceaefd4985c50990b14116b6d856af0985"
+    ],
+    "distributed_in": "ScoutMind for Windows (Microsoft Store MSIX), installed as bin/ffmpeg.exe; the same file ships in V1 1.0.119.0 and is pinned by packaging/hunter_cam.spec",
+    "archive_url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n9.0-latest-win64-gpl-9.0.zip",
+    "archive_release": "BtbN/FFmpeg-Builds release 'latest' = 'Latest Auto-Build (2026-09-26 13:03)', published 2026-09-26T13:22:38Z; asset created 2026-09-26T13:22:27Z; GitHub asset digest sha256:01dead67343ae44c049c42fb9adc9143b95a068667a0c7acce3dd8787f53b743",
+    "archive_note": "BtbN rebuilds 'latest' daily and prunes dated tags after about two weeks, so this URL will stop serving this file; ScoutMind keeps a private copy and verifies its SHA-256 when packaging.",
+    "dated_archive": {
+      "name": "ffmpeg-n9.0.2-10-g51c4a23d74-win64-gpl-9.0.zip",
+      "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2026-09-26-13-03/ffmpeg-n9.0.2-10-g51c4a23d74-win64-gpl-9.0.zip",
+      "sha256": "1f09d6d90fb9f47cfb588c6b85e2a2c23e991b5cde90027face382c402c3649d",
+      "size": 194034388,
+      "ffmpeg_exe_sha256": "b04aa739de5b1d3e89b1c9fe4862be81d6dbb61558decee0d68cdc85b03eb511",
+      "note": "verified 2026-09-27: the dated asset's bin/ffmpeg.exe is byte-identical to the one in the 'latest' repack"
+    }
+  },
+  "builder": {
+    "repo": "https://github.com/BtbN/FFmpeg-Builds.git",
+    "commit": "58cc05f33c20e3ead0ce876b72531ab482d0f981",
+    "license": "MIT",
+    "target": "win64",
+    "variant": "gpl",
+    "addins": [
+      "9.0"
+    ],
+    "entry_stage": "scripts.d/zz-final.sh",
+    "variant_configure": [
+      "--enable-gpl",
+      "--enable-version3",
+      "--disable-debug"
+    ],
+    "disabled_stage_scripts": [
+      "10-xcbproto",
+      "10-xorg-macros",
+      "10-xproto",
+      "10-xtrans",
+      "20-libxau",
+      "30-libpciaccess",
+      "30-libxcb",
+      "40-libdrm",
+      "40-libx11",
+      "45-pulseaudio",
+      "50-fdk-aac",
+      "50-libxext",
+      "50-libxfixes",
+      "50-libxi",
+      "50-libxinerama",
+      "50-libxrender",
+      "50-libxscrnsaver",
+      "50-libxxf86vm",
+      "50-whisper",
+      "60-libglvnd",
+      "60-libxcursor",
+      "60-libxrandr",
+      "60-libxv",
+      "99-finalize"
+    ],
+    "tag": "autobuild-2026-09-26-13-03",
+    "tag_commit_verified": "refs/tags/autobuild-2026-09-26-13-03 -> 58cc05f33c20e3ead0ce876b72531ab482d0f981 (GitHub API, 2026-09-27)",
+    "workflow_run": {
+      "id": 36241274776,
+      "url": "https://github.com/BtbN/FFmpeg-Builds/actions/runs/36241274776",
+      "workflow": "Build FFmpeg (.github/workflows/build.yml)",
+      "event": "schedule",
+      "head_sha": "58cc05f33c20e3ead0ce876b72531ab482d0f981",
+      "created_at": "2026-09-26T12:14:05Z",
+      "completed_at": "2026-09-26T13:22:46Z",
+      "job": "Build ffmpeg (win64, gpl 9.0)",
+      "job_id": 108404385202,
+      "job_started_at": "2026-09-26T12:29:47Z",
+      "job_completed_at": "2026-09-26T12:40:10Z",
+      "image_job": "Build target-variant image (ubuntu-latest, win64, gpl 9.0)",
+      "image_job_id": 108402832520
+    },
+    "later_commit_not_used": "54e192626545d0234b2a1383a34a29169cf52877 (2026-09-26T13:49:53Z, push-triggered run 36246469426) - after the release; push runs do not publish releases"
+  },
+  "ffmpeg": {
+    "name": "ffmpeg",
+    "license": "GPL-3.0-or-later (as configured: --enable-gpl --enable-version3; code base LGPL-2.1-or-later)",
+    "repo": "https://github.com/FFmpeg/FFmpeg.git",
+    "canonical_repo": "https://git.ffmpeg.org/ffmpeg.git",
+    "branch": "release/9.0",
+    "describe": "n9.0.2-10-g51c4a23d74",
+    "commit": "51c4a23d74ac2fbf2fb066e0ce274a966a16da23",
+    "extra_version": "20260926",
+    "license_file_packaged": "COPYING.GPLv3",
+    "hosts": [
+      "github.com",
+      "git.ffmpeg.org"
+    ]
+  },
+  "configure_cross_check": {
+    "embedded_flags_not_generated": [],
+    "generated_flags_not_embedded": [],
+    "match": true
+  },
+  "components": [
+    {
+      "id": "10-mingw",
+      "name": "mingw",
+      "stage": "mingw",
+      "script": "scripts.d/10-mingw.sh",
+      "license": "ZPL-2.1 AND MIT AND LicenseRef-public-domain (mingw-w64 headers, CRT, winpthreads; see COPYING.MinGW-w64-runtime)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://git.code.sf.net/p/mingw-w64/mingw-w64.git",
+      "urls": [
+        "https://git.code.sf.net/p/mingw-w64/mingw-w64.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "57b595039040eaa15bece85b7cc71d952281b269"
+      },
+      "dl": "retry-tool sh -c \"rm -rf mingw && git clone 'https://git.code.sf.net/p/mingw-w64/mingw-w64.git' mingw\" && cd mingw && git checkout \"57b595039040eaa15bece85b7cc71d952281b269\"",
+      "btbn_cache_name": "10-mingw_4a5947515b3202347fc7a8634b92a4da4c0981c56f574cc19d1b5ae025802126.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "git.code.sf.net"
+      ]
+    },
+    {
+      "id": "10-mingw-std-threads",
+      "name": "mingw-std-threads",
+      "stage": "mingw-std-threads",
+      "script": "scripts.d/10-mingw-std-threads.sh",
+      "license": "BSD-2-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/meganz/mingw-std-threads.git",
+      "urls": [
+        "https://github.com/meganz/mingw-std-threads.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "c931bac289dd431f1dd30fc4a5d1a7be36668073"
+      },
+      "dl": "git-mini-clone \"https://github.com/meganz/mingw-std-threads.git\" \"c931bac289dd431f1dd30fc4a5d1a7be36668073\" \".\"",
+      "btbn_cache_name": "10-mingw-std-threads_f6fe5dc5a067e90cd8b37a748b33962ac2eb09f3b486b287265803070dbf02d2.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-amf",
+      "name": "amf",
+      "stage": "amf",
+      "script": "scripts.d/50-amf.sh",
+      "license": "MIT (headers only)",
+      "role": "headers-only",
+      "repo": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF.git",
+      "urls": [
+        "https://github.com/GPUOpen-LibrariesAndSDKs/AMF.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "6277e353fd625121a8f627b1d0540323ef372a49"
+      },
+      "dl": "git-mini-clone \"https://github.com/GPUOpen-LibrariesAndSDKs/AMF.git\" \"6277e353fd625121a8f627b1d0540323ef372a49\" \".\"\nrm -rf .git Thirdparty",
+      "btbn_cache_name": "50-amf_7c25b9629d2f3a45b07d6701c869180793da062cf1cedbda5d281768afdb6cf0.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "45-vmaf",
+      "name": "vmaf",
+      "stage": "vmaf",
+      "script": "scripts.d/45-vmaf.sh",
+      "license": "BSD-2-Clause-Patent",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/Netflix/vmaf.git",
+      "urls": [
+        "https://github.com/Netflix/vmaf.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "86da14d0306a138fd3f01319860b905169746516"
+      },
+      "dl": "git-mini-clone \"https://github.com/Netflix/vmaf.git\" \"86da14d0306a138fd3f01319860b905169746516\" \".\"",
+      "btbn_cache_name": "45-vmaf_aaf0bdf34f8f3d15cc4ef5b243507514c911ea8730cd37a98b2f8a3ecf123af7.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-aom",
+      "name": "aom",
+      "stage": "aom",
+      "script": "scripts.d/50-aom.sh",
+      "license": "BSD-2-Clause (plus AOMedia Patent License 1.0)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://aomedia.googlesource.com/aom",
+      "urls": [
+        "https://aomedia.googlesource.com/aom"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "b4ce2cd097b00921b0327bfb5f07b5f8361ade99"
+      },
+      "dl": "git-mini-clone \"https://aomedia.googlesource.com/aom\" \"b4ce2cd097b00921b0327bfb5f07b5f8361ade99\" \".\"",
+      "btbn_cache_name": "50-aom_354b34b41392cdc88ea61b139b54314d146a8b324ed77c148ece5418cffd761b.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "aomedia.googlesource.com"
+      ]
+    },
+    {
+      "id": "50-avisynth",
+      "name": "avisynth",
+      "stage": "avisynth",
+      "script": "scripts.d/50-avisynth.sh",
+      "license": "GPL-2.0-or-later WITH AviSynth linking exception (headers only)",
+      "role": "headers-only",
+      "repo": "https://github.com/AviSynth/AviSynthPlus.git",
+      "urls": [
+        "https://github.com/AviSynth/AviSynthPlus.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "5c82777b374bdef16e13007a11e77d735ac1e4eb"
+      },
+      "dl": "git-mini-clone \"https://github.com/AviSynth/AviSynthPlus.git\" \"5c82777b374bdef16e13007a11e77d735ac1e4eb\" \".\"",
+      "btbn_cache_name": "50-avisynth_8ab1bb9093ff4aa59410b5463256de23838ef94867b7cc6a3a525892fddc9b85.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "25-fftw3",
+      "name": "fftw3",
+      "stage": "fftw3",
+      "script": "scripts.d/25-fftw3.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/FFTW/fftw3.git",
+      "urls": [
+        "https://github.com/FFTW/fftw3.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "93ed4c786934aec9946f8dda4b4e3eb08f8be41c"
+      },
+      "dl": "git-mini-clone \"https://github.com/FFTW/fftw3.git\" \"93ed4c786934aec9946f8dda4b4e3eb08f8be41c\" \".\"",
+      "btbn_cache_name": "25-fftw3_f590d55efb2139d10bea09f7f3542f648290d35fc2ecb3122d6896bf2af049e3.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-chromaprint",
+      "name": "chromaprint",
+      "stage": "chromaprint",
+      "script": "scripts.d/50-chromaprint.sh",
+      "license": "MIT AND LGPL-2.1-or-later (some files)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/acoustid/chromaprint.git",
+      "urls": [
+        "https://github.com/acoustid/chromaprint.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "aed8eba2202dd9d7b3b0a56c77904cc805490d72"
+      },
+      "dl": "git-mini-clone \"https://github.com/acoustid/chromaprint.git\" \"aed8eba2202dd9d7b3b0a56c77904cc805490d72\" \".\"",
+      "btbn_cache_name": "50-chromaprint_fd1913f99597fe11aa0a070aaaee173d271d06a2578bd240a1e6f9d7e5d9e344.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-dav1d",
+      "name": "dav1d",
+      "stage": "dav1d",
+      "script": "scripts.d/50-dav1d.sh",
+      "license": "BSD-2-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://code.videolan.org/videolan/dav1d.git",
+      "urls": [
+        "https://code.videolan.org/videolan/dav1d.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "9711965b60bb692ae24004659acf61f5c7d9ed61"
+      },
+      "dl": "git-mini-clone \"https://code.videolan.org/videolan/dav1d.git\" \"9711965b60bb692ae24004659acf61f5c7d9ed61\" \".\"",
+      "btbn_cache_name": "50-dav1d_289ebd1742c2ee56189cd4064c2a059c9289918f8a99c32140e72aa47d2ab690.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "code.videolan.org"
+      ]
+    },
+    {
+      "id": "50-davs2",
+      "name": "davs2",
+      "stage": "davs2",
+      "script": "scripts.d/50-davs2.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/pkuvcl/davs2.git",
+      "urls": [
+        "https://github.com/pkuvcl/davs2.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "b41cf117452e2d73d827f02d3e30aa20f1c721ac"
+      },
+      "dl": "git-mini-clone \"https://github.com/pkuvcl/davs2.git\" \"b41cf117452e2d73d827f02d3e30aa20f1c721ac\" \".\"\ngit fetch --unshallow",
+      "btbn_cache_name": "50-davs2_a2d3a5d05dbd810e7a33f41ca77f70f1775ab8318ffe3e1b365105e8ad813d7e.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-dvd_30-libdvdcss",
+      "name": "libdvdcss",
+      "stage": "dvd",
+      "script": "scripts.d/50-dvd/30-libdvdcss.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://code.videolan.org/videolan/libdvdcss.git",
+      "urls": [
+        "https://code.videolan.org/videolan/libdvdcss.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "811ce97a1d4d1c9d936f4b2707f533a9ef768251"
+      },
+      "dl": "git-mini-clone \"https://code.videolan.org/videolan/libdvdcss.git\" \"811ce97a1d4d1c9d936f4b2707f533a9ef768251\" \".\"",
+      "btbn_cache_name": "30-libdvdcss_8e6c469595eeef1d2ca7962b68faabe5531518009472d449f700665a616bc66c.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "code.videolan.org"
+      ]
+    },
+    {
+      "id": "50-dvd_40-libdvdread",
+      "name": "libdvdread",
+      "stage": "dvd",
+      "script": "scripts.d/50-dvd/40-libdvdread.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://code.videolan.org/videolan/libdvdread.git",
+      "urls": [
+        "https://code.videolan.org/videolan/libdvdread.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "0f30df53125b564ef45903714403ce0a1e6c5e9e"
+      },
+      "dl": "git-mini-clone \"https://code.videolan.org/videolan/libdvdread.git\" \"0f30df53125b564ef45903714403ce0a1e6c5e9e\" \".\"",
+      "btbn_cache_name": "40-libdvdread_05480a48c37dea2502d831aa7dd0b71c28c6d32cfabf95e0cbb16512fe45d8f0.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "code.videolan.org"
+      ]
+    },
+    {
+      "id": "50-dvd_50-libdvdnav",
+      "name": "libdvdnav",
+      "stage": "dvd",
+      "script": "scripts.d/50-dvd/50-libdvdnav.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://code.videolan.org/videolan/libdvdnav.git",
+      "urls": [
+        "https://code.videolan.org/videolan/libdvdnav.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "8147ccd35e5aae4afdd21171cf7b6b4d8f179d28"
+      },
+      "dl": "git-mini-clone \"https://code.videolan.org/videolan/libdvdnav.git\" \"8147ccd35e5aae4afdd21171cf7b6b4d8f179d28\" \".\"",
+      "btbn_cache_name": "50-libdvdnav_20088474345356fbabc64ef14250d1f5ed698d04d2facb7d73dddfc9ace7b684.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "code.videolan.org"
+      ]
+    },
+    {
+      "id": "50-ffnvcodec",
+      "name": "ffnvcodec",
+      "stage": "ffnvcodec",
+      "script": "scripts.d/50-ffnvcodec.sh",
+      "license": "MIT (headers only)",
+      "role": "headers-only",
+      "repo": "https://github.com/FFmpeg/nv-codec-headers.git",
+      "urls": [
+        "https://github.com/FFmpeg/nv-codec-headers.git"
+      ],
+      "revisions": {
+        "SCRIPT_BRANCH2": "sdk/13.0",
+        "SCRIPT_BRANCH3": "sdk/11.1",
+        "SCRIPT_COMMIT": "eddcea9e27f6b772057c9b3f87de2cc1737faffc",
+        "SCRIPT_COMMIT2": "ced4f8eba3ba5dd431932cba17928f0dffdaeb2b",
+        "SCRIPT_COMMIT3": "833faee5f7b8d3f56444347c587f4aed11ee213f"
+      },
+      "dl": "git-mini-clone \"https://github.com/FFmpeg/nv-codec-headers.git\" \"eddcea9e27f6b772057c9b3f87de2cc1737faffc\" \"ffnvcodec\"\ngit-mini-clone \"https://github.com/FFmpeg/nv-codec-headers.git\" \"ced4f8eba3ba5dd431932cba17928f0dffdaeb2b\" ffnvcodec2\ngit-mini-clone \"https://github.com/FFmpeg/nv-codec-headers.git\" \"833faee5f7b8d3f56444347c587f4aed11ee213f\" ffnvcodec3",
+      "btbn_cache_name": "50-ffnvcodec_ef2a38b483abf36f56dfe74a3ab3909ef01360a01619123b6a4cfac4eece7e28.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "20-libiconv",
+      "name": "libiconv",
+      "stage": "libiconv",
+      "script": "scripts.d/20-libiconv.sh",
+      "license": "LGPL-2.1-or-later (library; bundled gnulib modules under their own terms)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://git.savannah.gnu.org/git/libiconv.git",
+      "urls": [
+        "git://git.git.savannah.gnu.org/libiconv.git",
+        "https://git.savannah.gnu.org/git/gnulib.git",
+        "https://git.savannah.gnu.org/git/libiconv.git",
+        "https://github.com/coreutils/gnulib.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "1df3087ba8110c7f3ed3eb5f8869b814dbbe00b0",
+        "SCRIPT_COMMIT2": "eb72eb6f75f5621c5d648acd11467fd124584617"
+      },
+      "dl": "retry-tool sh -c \"rm -rf iconv && git clone 'git://git.git.savannah.gnu.org/libiconv.git' iconv\" && git -C iconv checkout \"1df3087ba8110c7f3ed3eb5f8869b814dbbe00b0\"\ncd iconv && retry-tool sh -c \"rm -rf gnulib && git clone --filter=blob:none 'https://github.com/coreutils/gnulib.git' gnulib\" && git -C gnulib checkout \"eb72eb6f75f5621c5d648acd11467fd124584617\" && rm -rf gnulib/.git",
+      "btbn_cache_name": "20-libiconv_d305d67ced0587cd182ccb111e5b58aa20270faf665afb5444c0fbaed0762844.tar.xz",
+      "mirror_fallbacks": [
+        [
+          "git://git.git.savannah.gnu.org/libiconv.git",
+          "https://git.savannah.gnu.org/git/libiconv.git"
+        ],
+        [
+          "https://github.com/coreutils/gnulib.git",
+          "https://git.savannah.gnu.org/git/gnulib.git"
+        ]
+      ],
+      "build_time_fetches": [],
+      "hosts": [
+        "git.git.savannah.gnu.org",
+        "git.savannah.gnu.org",
+        "github.com"
+      ]
+    },
+    {
+      "id": "25-libxml2",
+      "name": "libxml2",
+      "stage": "libxml2",
+      "script": "scripts.d/25-libxml2.sh",
+      "license": "MIT",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/GNOME/libxml2.git",
+      "urls": [
+        "https://github.com/GNOME/libxml2.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "91586dc6742ab335682235120363f6e126eea5e2"
+      },
+      "dl": "git-mini-clone \"https://github.com/GNOME/libxml2.git\" \"91586dc6742ab335682235120363f6e126eea5e2\" \".\"",
+      "btbn_cache_name": "25-libxml2_dddeb5d5d186abb11e5f3a0c2d05938fcdb6348804e56c03a7f06263620cdc83.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "45-fonts_25-freetype",
+      "name": "freetype",
+      "stage": "fonts",
+      "script": "scripts.d/45-fonts/25-freetype.sh",
+      "license": "FTL OR GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://gitlab.freedesktop.org/freetype/freetype.git",
+      "urls": [
+        "https://gitlab.freedesktop.org/freetype/freetype.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "d333439633039de426f943f28a2926c7f97b5ae5"
+      },
+      "dl": "git-mini-clone \"https://gitlab.freedesktop.org/freetype/freetype.git\" \"d333439633039de426f943f28a2926c7f97b5ae5\" \".\"",
+      "btbn_cache_name": "25-freetype_839dfebde0a38da3f7515004bed2270140526899f2f9b5f77298b7daac9ba42b.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "gitlab.freedesktop.org"
+      ]
+    },
+    {
+      "id": "45-fonts_35-fontconfig",
+      "name": "fontconfig",
+      "stage": "fonts",
+      "script": "scripts.d/45-fonts/35-fontconfig.sh",
+      "license": "HPND-sell-variant (MIT-style)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
+      "urls": [
+        "https://gitlab.freedesktop.org/fontconfig/fontconfig.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "bd8f7b597de96761750d0365abb49b19d2f8d5c3"
+      },
+      "dl": "git-mini-clone \"https://gitlab.freedesktop.org/fontconfig/fontconfig.git\" \"bd8f7b597de96761750d0365abb49b19d2f8d5c3\" \".\"",
+      "btbn_cache_name": "35-fontconfig_ce2e0916ca408e9567ab57c27be06a7166a9f9a3da902c751fef1bbb969f6a1a.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "gitlab.freedesktop.org"
+      ]
+    },
+    {
+      "id": "45-fonts_45-harfbuzz",
+      "name": "harfbuzz",
+      "stage": "fonts",
+      "script": "scripts.d/45-fonts/45-harfbuzz.sh",
+      "license": "MIT-Modern-Variant",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/harfbuzz/harfbuzz.git",
+      "urls": [
+        "https://github.com/harfbuzz/harfbuzz.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "b3bab62307017934dd7f532c52a696fefb12b3ad"
+      },
+      "dl": "git-mini-clone \"https://github.com/harfbuzz/harfbuzz.git\" \"b3bab62307017934dd7f532c52a696fefb12b3ad\" \".\"",
+      "btbn_cache_name": "45-harfbuzz_23f9e500f00621c247219aacc18850d66d1ac0e974cb33a1423055284aceb5e3.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "45-fonts_50-freetype",
+      "name": "freetype",
+      "stage": "fonts",
+      "script": "scripts.d/45-fonts/50-freetype.sh",
+      "license": "FTL OR GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://gitlab.freedesktop.org/freetype/freetype.git",
+      "urls": [
+        "https://gitlab.freedesktop.org/freetype/freetype.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "d333439633039de426f943f28a2926c7f97b5ae5"
+      },
+      "dl": "git-mini-clone \"https://gitlab.freedesktop.org/freetype/freetype.git\" \"d333439633039de426f943f28a2926c7f97b5ae5\" \".\"",
+      "btbn_cache_name": "50-freetype_839dfebde0a38da3f7515004bed2270140526899f2f9b5f77298b7daac9ba42b.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "gitlab.freedesktop.org"
+      ]
+    },
+    {
+      "id": "50-frei0r",
+      "name": "frei0r",
+      "stage": "frei0r",
+      "script": "scripts.d/50-frei0r.sh",
+      "license": "GPL-2.0-or-later (headers only)",
+      "role": "headers-only",
+      "repo": "https://github.com/dyne/frei0r.git",
+      "urls": [
+        "https://github.com/dyne/frei0r.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "4c95b2a02b2d03c71d5f6d7980d16c99acfd5a5f"
+      },
+      "dl": "git-mini-clone \"https://github.com/dyne/frei0r.git\" \"4c95b2a02b2d03c71d5f6d7980d16c99acfd5a5f\" \".\"",
+      "btbn_cache_name": "50-frei0r_55b6f225efa82d03fca598c78033acf1831f46a37ae8f66567882818b520d1fc.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "25-fribidi",
+      "name": "fribidi",
+      "stage": "fribidi",
+      "script": "scripts.d/25-fribidi.sh",
+      "license": "LGPL-2.1-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/fribidi/fribidi.git",
+      "urls": [
+        "https://github.com/fribidi/fribidi.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "4c914a92e94a9fe4f30ae83a1130099841566448"
+      },
+      "dl": "git-mini-clone \"https://github.com/fribidi/fribidi.git\" \"4c914a92e94a9fe4f30ae83a1130099841566448\" \".\"",
+      "btbn_cache_name": "25-fribidi_a9c156a32e2270c78ca34f8bfd98b17b8669e2d809cc9a9c5f6d1c063c644f1e.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-gme",
+      "name": "gme",
+      "stage": "gme",
+      "script": "scripts.d/50-gme.sh",
+      "license": "LGPL-2.1-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/libgme/game-music-emu.git",
+      "urls": [
+        "https://github.com/libgme/game-music-emu.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "f68963b1de0633149b05732113d3c3113c6f63a1"
+      },
+      "dl": "git-mini-clone \"https://github.com/libgme/game-music-emu.git\" \"f68963b1de0633149b05732113d3c3113c6f63a1\" \".\"",
+      "btbn_cache_name": "50-gme_a777e130690856e910357309c2a2ece4423a149328c5a5780012b7d4ad3641ff.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "25-gmp",
+      "name": "gmp",
+      "stage": "gmp",
+      "script": "scripts.d/25-gmp.sh",
+      "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/BtbN/gmplib.git",
+      "urls": [
+        "https://github.com/BtbN/gmplib.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "763b40df71c0f4d5f5d7b33dc55038c8c9377ecf"
+      },
+      "dl": "git-mini-clone \"https://github.com/BtbN/gmplib.git\" \"763b40df71c0f4d5f5d7b33dc55038c8c9377ecf\" \".\"",
+      "btbn_cache_name": "25-gmp_db2c1ce62ef8c1b88dcc4d27b07bfb6e847e740125923386ccf9967cd05dc93f.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-kvazaar",
+      "name": "kvazaar",
+      "stage": "kvazaar",
+      "script": "scripts.d/50-kvazaar.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/ultravideo/kvazaar.git",
+      "urls": [
+        "https://github.com/ultravideo/kvazaar.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "2b06691bb5844404c0e703f12a5d7b0fee914ec7"
+      },
+      "dl": "git-mini-clone \"https://github.com/ultravideo/kvazaar.git\" \"2b06691bb5844404c0e703f12a5d7b0fee914ec7\" \".\"",
+      "btbn_cache_name": "50-kvazaar_da165ff1fadcc81a1f9d7a5f3d96e8a4e14f630022b723e710efe6bbe54d3d52.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-lcevcdec",
+      "name": "lcevcdec",
+      "stage": "lcevcdec",
+      "script": "scripts.d/50-lcevcdec.sh",
+      "license": "BSD-3-Clause-Clear",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/v-novaltd/LCEVCdec.git",
+      "urls": [
+        "https://github.com/v-novaltd/LCEVCdec.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "17804ac54db8fbb42717f3275b1e73f3c0b067d3"
+      },
+      "dl": "git-mini-clone \"https://github.com/v-novaltd/LCEVCdec.git\" \"17804ac54db8fbb42717f3275b1e73f3c0b067d3\" \".\"",
+      "btbn_cache_name": "50-lcevcdec_9610d27cbf57b4db022177a4e8df5b12077765c4e14519ffa2047d330c2b139e.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "20-zlib",
+      "name": "zlib",
+      "stage": "zlib",
+      "script": "scripts.d/20-zlib.sh",
+      "license": "Zlib",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/madler/zlib.git",
+      "urls": [
+        "https://github.com/madler/zlib.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "767c4c947852e143f582c85f14cf573411df1b35"
+      },
+      "dl": "git-mini-clone \"https://github.com/madler/zlib.git\" \"767c4c947852e143f582c85f14cf573411df1b35\" \".\"",
+      "btbn_cache_name": "20-zlib_bf2e5201ff9a94837b6910b9c13a9cdd9d2d5934f12ac9f32eda1538d1fcde49.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "25-libpng",
+      "name": "libpng",
+      "stage": "libpng",
+      "script": "scripts.d/25-libpng.sh",
+      "license": "libpng-2.0",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/glennrp/libpng.git",
+      "urls": [
+        "https://github.com/glennrp/libpng.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "964b4135949703b705fc760fc3fb546b86e5ab47"
+      },
+      "dl": "git-mini-clone \"https://github.com/glennrp/libpng.git\" \"964b4135949703b705fc760fc3fb546b86e5ab47\" \".\"",
+      "btbn_cache_name": "25-libpng_b948a48a853c9c7e1727e7244e4f21554dae18b83ce7f00e8a5421c0e907b73b.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libaribb24",
+      "name": "libaribb24",
+      "stage": "libaribb24",
+      "script": "scripts.d/50-libaribb24.sh",
+      "license": "LGPL-3.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/nkoriyama/aribb24.git",
+      "urls": [
+        "https://github.com/nkoriyama/aribb24.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "5e9be272f96e00f15a2f3c5f8ba7e124862aec38"
+      },
+      "dl": "git-mini-clone \"https://github.com/nkoriyama/aribb24.git\" \"5e9be272f96e00f15a2f3c5f8ba7e124862aec38\" \".\"",
+      "btbn_cache_name": "50-libaribb24_3dd74ffb861f7ef9133dab074b9845408d84ebc49db9aee5d91829efba6d52ce.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "25-openssl",
+      "name": "openssl",
+      "stage": "openssl",
+      "script": "scripts.d/25-openssl.sh",
+      "license": "Apache-2.0",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/openssl/openssl.git",
+      "urls": [
+        "https://github.com/openssl/openssl.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "openssl-3.6.4",
+        "SCRIPT_TAGFILTER": "openssl-3.6.*"
+      },
+      "dl": "git-mini-clone \"https://github.com/openssl/openssl.git\" \"openssl-3.6.4\" \".\"\ngit submodule update --init --recursive --depth=1",
+      "btbn_cache_name": "25-openssl_6f695916f5dbd6cd60d7719032826032a028d9b83164ebea7a13c72254f690a5.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libaribcaption",
+      "name": "libaribcaption",
+      "stage": "libaribcaption",
+      "script": "scripts.d/50-libaribcaption.sh",
+      "license": "MIT",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/xqq/libaribcaption.git",
+      "urls": [
+        "https://github.com/xqq/libaribcaption.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "c64c23b8905ba514b87c9789269e9f66f949ffe0"
+      },
+      "dl": "git-mini-clone \"https://github.com/xqq/libaribcaption.git\" \"c64c23b8905ba514b87c9789269e9f66f949ffe0\" \".\"",
+      "btbn_cache_name": "50-libaribcaption_8315a724d2e43047c02fb15f99a6decc2824fd4abd55c795ca1063dca443bf8e.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "45-libunibreak",
+      "name": "libunibreak",
+      "stage": "libunibreak",
+      "script": "scripts.d/45-libunibreak.sh",
+      "license": "Zlib",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/adah1972/libunibreak.git",
+      "urls": [
+        "https://github.com/adah1972/libunibreak.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "28a2756b864c343f438cd22537d49d394d4666a5"
+      },
+      "dl": "git-mini-clone \"https://github.com/adah1972/libunibreak.git\" \"28a2756b864c343f438cd22537d49d394d4666a5\" \".\"",
+      "btbn_cache_name": "45-libunibreak_e861a261ce25cfd0ba5db1e70cbdc0c0eb8ea42a4e1bb3443c928e9604315d37.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libass",
+      "name": "libass",
+      "stage": "libass",
+      "script": "scripts.d/50-libass.sh",
+      "license": "ISC",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/libass/libass.git",
+      "urls": [
+        "https://github.com/libass/libass.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "f61db567e6593df3470e91594bcd4ad2d0473aff"
+      },
+      "dl": "git-mini-clone \"https://github.com/libass/libass.git\" \"f61db567e6593df3470e91594bcd4ad2d0473aff\" \".\"",
+      "btbn_cache_name": "50-libass_8d32f6ca9b508226966e8a676c7e47ed5a6ad66bd2caab05a6738c80d45feaab.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "45-libudfread",
+      "name": "libudfread",
+      "stage": "libudfread",
+      "script": "scripts.d/45-libudfread.sh",
+      "license": "LGPL-2.1-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://code.videolan.org/videolan/libudfread.git",
+      "urls": [
+        "https://code.videolan.org/videolan/libudfread.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "b0bc6957e7e07d5f35391f210596d9eb71cffdd9"
+      },
+      "dl": "git-mini-clone \"https://code.videolan.org/videolan/libudfread.git\" \"b0bc6957e7e07d5f35391f210596d9eb71cffdd9\" \".\"",
+      "btbn_cache_name": "45-libudfread_fd3762aa44b177492e9294237da9af64f7c2a22b97658e6e2a5395d1ae3a13c0.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "code.videolan.org"
+      ]
+    },
+    {
+      "id": "50-libbluray",
+      "name": "libbluray",
+      "stage": "libbluray",
+      "script": "scripts.d/50-libbluray.sh",
+      "license": "LGPL-2.1-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://code.videolan.org/videolan/libbluray.git",
+      "urls": [
+        "https://code.videolan.org/videolan/libbluray.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "a24f4fad4d62893de647abc8671397747b2359dd"
+      },
+      "dl": "git-mini-clone \"https://code.videolan.org/videolan/libbluray.git\" \"a24f4fad4d62893de647abc8671397747b2359dd\" \".\"",
+      "btbn_cache_name": "50-libbluray_cbdd227c469333ec53b78a1b5c8b26cb3db25c331d9052740a38136bd96b13b0.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "code.videolan.org"
+      ]
+    },
+    {
+      "id": "50-libcurl",
+      "name": "libcurl",
+      "stage": "libcurl",
+      "script": "scripts.d/50-libcurl.sh",
+      "license": "curl",
+      "role": "built in the image but not linked (no configure flag and no libcurl strings in ffmpeg.exe); included as a superset",
+      "repo": "https://github.com/curl/curl.git",
+      "urls": [
+        "https://github.com/curl/curl.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "4c67658f953751de9e66bb5f9729af821a641341"
+      },
+      "dl": "git-mini-clone \"https://github.com/curl/curl.git\" \"4c67658f953751de9e66bb5f9729af821a641341\" \".\"",
+      "btbn_cache_name": "50-libcurl_1c6d890a6f32f86e0a415b0efc59ac6093ab33ab391c0fb339c3959c252941ef.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libjxl_45-brotli",
+      "name": "brotli",
+      "stage": "libjxl",
+      "script": "scripts.d/50-libjxl/45-brotli.sh",
+      "license": "MIT",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/google/brotli.git",
+      "urls": [
+        "https://github.com/google/brotli.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "a3abcbee0d945e51dddeec81e647ffe0cde182c2"
+      },
+      "dl": "git-mini-clone \"https://github.com/google/brotli.git\" \"a3abcbee0d945e51dddeec81e647ffe0cde182c2\" \".\"",
+      "btbn_cache_name": "45-brotli_5b1766c0a935049ea5bf0b54743ec092ee5bf45fd169a8e1bab2b0263b676105.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libjxl_45-lcms2",
+      "name": "lcms2",
+      "stage": "libjxl",
+      "script": "scripts.d/50-libjxl/45-lcms2.sh",
+      "license": "MIT",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/mm2/Little-CMS.git",
+      "urls": [
+        "https://github.com/mm2/Little-CMS.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "a0b0d7a69b13b461bdbd9cff9f7f1d59ccd1858c"
+      },
+      "dl": "git-mini-clone \"https://github.com/mm2/Little-CMS.git\" \"a0b0d7a69b13b461bdbd9cff9f7f1d59ccd1858c\" \".\"",
+      "btbn_cache_name": "45-lcms2_1ccc3efc09fb7ae6953aeb5fc70888dea5314922cb3ac8fec628966636c3d176.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libjxl_50-libjxl",
+      "name": "libjxl",
+      "stage": "libjxl",
+      "script": "scripts.d/50-libjxl/50-libjxl.sh",
+      "license": "BSD-3-Clause (bundled highway: Apache-2.0 OR BSD-3-Clause)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/libjxl/libjxl.git",
+      "urls": [
+        "https://github.com/libjxl/libjxl.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "b87738951c1254cd8cccaa6d47712ba735da56d8"
+      },
+      "dl": "git-mini-clone \"https://github.com/libjxl/libjxl.git\" \"b87738951c1254cd8cccaa6d47712ba735da56d8\" \".\"\ngit submodule update --init --recursive --depth 1 --recommend-shallow third_party/highway",
+      "btbn_cache_name": "50-libjxl_4e9888f992f7e59816f63ab6d0751f7d2c4c2ccd9f7b376158705b3c7b036b52.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libmp3lame",
+      "name": "libmp3lame",
+      "stage": "libmp3lame",
+      "script": "scripts.d/50-libmp3lame.sh",
+      "license": "LGPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://svn.code.sf.net/p/lame/svn/trunk/lame",
+      "urls": [
+        "https://svn.code.sf.net/p/lame/svn/trunk/lame",
+        "https://svn.code.sf.net/p/lame/svn/trunk/lame@6835"
+      ],
+      "revisions": {
+        "SCRIPT_REV": "6835"
+      },
+      "dl": "retry-tool sh -c \"rm -rf lame && svn checkout 'https://svn.code.sf.net/p/lame/svn/trunk/lame@6835' lame\" && cd lame\nautoreconf -i",
+      "btbn_cache_name": "50-libmp3lame_53b8bea5c8c8e8f4284a83912b2208082e5f7e0abce7f205c02dfea85bc13dd3.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "svn.code.sf.net"
+      ]
+    },
+    {
+      "id": "50-libopus",
+      "name": "libopus",
+      "stage": "libopus",
+      "script": "scripts.d/50-libopus.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/xiph/opus.git",
+      "urls": [
+        "https://github.com/xiph/opus.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "503d81b138d76621aae4b12786e90de48aa8db3a"
+      },
+      "dl": "git-mini-clone \"https://github.com/xiph/opus.git\" \"503d81b138d76621aae4b12786e90de48aa8db3a\" \".\"\n./autogen.sh",
+      "btbn_cache_name": "50-libopus_a188c018d9bc2b808f76091aaf419e1c910d45c8e477f131ff5c25cd614b4252.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "47-vulkan_40-vulkan-headers",
+      "name": "vulkan-headers",
+      "stage": "vulkan",
+      "script": "scripts.d/47-vulkan/40-vulkan-headers.sh",
+      "license": "Apache-2.0 OR MIT",
+      "role": "headers-only",
+      "repo": "https://github.com/KhronosGroup/Vulkan-Headers.git",
+      "urls": [
+        "https://github.com/KhronosGroup/Vulkan-Headers.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "v1.4.363",
+        "SCRIPT_TAGFILTER": "v?.*.*"
+      },
+      "dl": "git-mini-clone \"https://github.com/KhronosGroup/Vulkan-Headers.git\" \"v1.4.363\" \".\"",
+      "btbn_cache_name": "40-vulkan-headers_3d08793cac3f0e3cac071b802aae1634fe925048f94a56d388c4c618a1ea8482.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "47-vulkan_45-vulkan-loader",
+      "name": "vulkan-loader",
+      "stage": "vulkan",
+      "script": "scripts.d/47-vulkan/45-vulkan-loader.sh",
+      "license": "Apache-2.0",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/BtbN/Vulkan-Shim-Loader.git",
+      "urls": [
+        "https://github.com/BtbN/Vulkan-Shim-Loader.git",
+        "https://github.com/KhronosGroup/Vulkan-Headers.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "65b3936528cd92eb4ea3de485d03f858a3850484",
+        "SCRIPT_COMMIT2": "v1.4.363",
+        "SCRIPT_TAGFILTER2": "v?.*.*"
+      },
+      "dl": "git-mini-clone \"https://github.com/BtbN/Vulkan-Shim-Loader.git\" \"65b3936528cd92eb4ea3de485d03f858a3850484\" \".\"\ngit-mini-clone \"https://github.com/KhronosGroup/Vulkan-Headers.git\" \"v1.4.363\" Vulkan-Headers",
+      "btbn_cache_name": "45-vulkan-loader_ab4a5b2a493729e8ea13712813acbf64e333ec5f23ab04320f11cadc2755079f.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "47-vulkan_50-shaderc",
+      "name": "shaderc",
+      "stage": "vulkan",
+      "script": "scripts.d/47-vulkan/50-shaderc.sh",
+      "license": "Apache-2.0 (bundles glslang: BSD-3-Clause AND others; SPIRV-Tools: Apache-2.0; SPIRV-Headers: MIT)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/google/shaderc.git",
+      "urls": [
+        "https://github.com/google/shaderc.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "a8abeb0b8a9d4b11e3d59ca9f4550b8213e733ab"
+      },
+      "dl": "git-mini-clone \"https://github.com/google/shaderc.git\" \"a8abeb0b8a9d4b11e3d59ca9f4550b8213e733ab\" \".\"\n./utils/git-sync-deps || exit 0",
+      "btbn_cache_name": "50-shaderc_9ff3096908159ae870c6a5086e7e01e4e0de535fb9c6d52de76ce7d4cf73b600.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "47-vulkan_55-spirv-cross",
+      "name": "spirv-cross",
+      "stage": "vulkan",
+      "script": "scripts.d/47-vulkan/55-spirv-cross.sh",
+      "license": "Apache-2.0 AND MIT",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/KhronosGroup/SPIRV-Cross.git",
+      "urls": [
+        "https://github.com/KhronosGroup/SPIRV-Cross.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "aa217aeb6c9f0ace7a0ab233b28807edf45eb165"
+      },
+      "dl": "git-mini-clone \"https://github.com/KhronosGroup/SPIRV-Cross.git\" \"aa217aeb6c9f0ace7a0ab233b28807edf45eb165\" \".\"",
+      "btbn_cache_name": "55-spirv-cross_7ee82163958c020ff8f9cfd2a6eff8aefdfc6391d36898ec54a24f09f58479d4.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "47-vulkan_60-spirv-headers",
+      "name": "spirv-headers",
+      "stage": "vulkan",
+      "script": "scripts.d/47-vulkan/60-spirv-headers.sh",
+      "license": "MIT",
+      "role": "headers-only",
+      "repo": "https://github.com/KhronosGroup/SPIRV-Headers.git",
+      "urls": [
+        "https://github.com/KhronosGroup/SPIRV-Headers.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "2b7475f6d664efbad4d4315c94ecec9640831e5b"
+      },
+      "dl": "git-mini-clone \"https://github.com/KhronosGroup/SPIRV-Headers.git\" \"2b7475f6d664efbad4d4315c94ecec9640831e5b\" \".\"",
+      "btbn_cache_name": "60-spirv-headers_23fe5e903430db492bfbae8fb0b6124c0169bcc550874b85f068cfe8d8adfffb.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libplacebo",
+      "name": "libplacebo",
+      "stage": "libplacebo",
+      "script": "scripts.d/50-libplacebo.sh",
+      "license": "LGPL-2.1-or-later (submodules: glad MIT, jinja BSD-3-Clause, markupsafe BSD-3-Clause, fast_float Apache-2.0 OR MIT)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://code.videolan.org/videolan/libplacebo.git",
+      "urls": [
+        "https://code.videolan.org/videolan/libplacebo.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "e2972fdd09adacd383656738d7d280f0cd84a761"
+      },
+      "dl": "git-mini-clone \"https://code.videolan.org/videolan/libplacebo.git\" \"e2972fdd09adacd383656738d7d280f0cd84a761\" \".\"\ngit submodule update --init --recursive --depth=1 --filter=blob:none",
+      "btbn_cache_name": "50-libplacebo_0071556c28daac58fcba4b5f9b884b112d60abe51dfecee8b158f3e1f738be70.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "code.videolan.org"
+      ]
+    },
+    {
+      "id": "50-librist_40-mbedtls",
+      "name": "mbedtls",
+      "stage": "librist",
+      "script": "scripts.d/50-librist/40-mbedtls.sh",
+      "license": "Apache-2.0 OR GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/ARMmbed/mbedtls.git",
+      "urls": [
+        "https://github.com/ARMmbed/mbedtls.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "v4.2.0",
+        "SCRIPT_TAGFILTER": "v4.*"
+      },
+      "dl": "git-mini-clone \"https://github.com/ARMmbed/mbedtls.git\" \"v4.2.0\" \".\"\ngit submodule update --init --recursive --depth=1",
+      "btbn_cache_name": "40-mbedtls_8dd146455b388b9a7236d83bb2904ff89bba41fa28da9af8a310fc01f4ff1b53.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-librist_50-librist",
+      "name": "librist",
+      "stage": "librist",
+      "script": "scripts.d/50-librist/50-librist.sh",
+      "license": "BSD-2-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://code.videolan.org/rist/librist.git",
+      "urls": [
+        "https://code.videolan.org/rist/librist.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "4f45ef8f78983892d52ccd52d9f675435b23738f"
+      },
+      "dl": "git-mini-clone \"https://code.videolan.org/rist/librist.git\" \"4f45ef8f78983892d52ccd52d9f675435b23738f\" \".\"",
+      "btbn_cache_name": "50-librist_c44a5e59d58d44b672c8df850ae76b4ad372ebab3a4a63a003ac35d45aa9d1a2.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "code.videolan.org"
+      ]
+    },
+    {
+      "id": "45-libffi",
+      "name": "libffi",
+      "stage": "libffi",
+      "script": "scripts.d/45-libffi.sh",
+      "license": "MIT",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/libffi/libffi.git",
+      "urls": [
+        "https://github.com/libffi/libffi.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "bc553867367246d140cd156f060bd0409f57f157"
+      },
+      "dl": "git-mini-clone \"https://github.com/libffi/libffi.git\" \"bc553867367246d140cd156f060bd0409f57f157\" \".\"",
+      "btbn_cache_name": "45-libffi_4926a5ddb533e7af1ceb6847462394f09f68adb6ad0e7ec5408d79e5ab3fe73a.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "45-pcre2",
+      "name": "pcre2",
+      "stage": "pcre2",
+      "script": "scripts.d/45-pcre2.sh",
+      "license": "BSD-3-Clause WITH PCRE2-exception",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/PCRE2Project/pcre2.git",
+      "urls": [
+        "https://github.com/PCRE2Project/pcre2.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "09eb19dc1102b34e7557408f33318364cb97d2b0"
+      },
+      "dl": "git-mini-clone \"https://github.com/PCRE2Project/pcre2.git\" \"09eb19dc1102b34e7557408f33318364cb97d2b0\" \".\"",
+      "btbn_cache_name": "45-pcre2_8f18f3d355cedfce208fb5a70fbe344e39dc7f54fc1825128dc862c6d97be0e7.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "45-pixman",
+      "name": "pixman",
+      "stage": "pixman",
+      "script": "scripts.d/45-pixman.sh",
+      "license": "MIT",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://gitlab.freedesktop.org/pixman/pixman.git",
+      "urls": [
+        "https://gitlab.freedesktop.org/pixman/pixman.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "96c04d1b87934dc4b9396197a2dff737698ab310"
+      },
+      "dl": "git-mini-clone \"https://gitlab.freedesktop.org/pixman/pixman.git\" \"96c04d1b87934dc4b9396197a2dff737698ab310\" \".\"",
+      "btbn_cache_name": "45-pixman_ffb8f7552f1012347d02eb8fe976cbc9c3bc79e42df005f8c7389b8379ce581c.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "gitlab.freedesktop.org"
+      ]
+    },
+    {
+      "id": "50-librsvg_10-glib",
+      "name": "glib",
+      "stage": "librsvg",
+      "script": "scripts.d/50-librsvg/10-glib.sh",
+      "license": "LGPL-2.1-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/GNOME/glib.git",
+      "urls": [
+        "https://github.com/GNOME/glib.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "5a124d1e66a6c2dc56989303b4d6d4781c2952ed"
+      },
+      "dl": "git-mini-clone \"https://github.com/GNOME/glib.git\" \"5a124d1e66a6c2dc56989303b4d6d4781c2952ed\" \".\"\ngit submodule update --init --recursive --depth=1\nmeson subprojects download proxy-libintl",
+      "btbn_cache_name": "10-glib_5402d13c8cec3808b3aeedfebf49bf0062a14163059573ff9a30fe5add2b473a.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-librsvg_20-cairo",
+      "name": "cairo",
+      "stage": "librsvg",
+      "script": "scripts.d/50-librsvg/20-cairo.sh",
+      "license": "LGPL-2.1-only OR MPL-1.1",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://gitlab.freedesktop.org/cairo/cairo.git",
+      "urls": [
+        "https://gitlab.freedesktop.org/cairo/cairo.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "74755964edef651691d5cd36ff140108298e4e6e"
+      },
+      "dl": "git-mini-clone \"https://gitlab.freedesktop.org/cairo/cairo.git\" \"74755964edef651691d5cd36ff140108298e4e6e\" \".\"",
+      "btbn_cache_name": "20-cairo_b460be039dc49e1a252ad8a1ed08863785f51cdb1156ceb585ca590d4f98beea.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "gitlab.freedesktop.org"
+      ]
+    },
+    {
+      "id": "50-librsvg_30-pango",
+      "name": "pango",
+      "stage": "librsvg",
+      "script": "scripts.d/50-librsvg/30-pango.sh",
+      "license": "LGPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/GNOME/pango.git",
+      "urls": [
+        "https://github.com/GNOME/pango.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "8e74c27c113c98664b77272d16b14bbce542c184"
+      },
+      "dl": "git-mini-clone \"https://github.com/GNOME/pango.git\" \"8e74c27c113c98664b77272d16b14bbce542c184\" \".\"",
+      "btbn_cache_name": "30-pango_fa28105e276f1fc77de3a3231765da71db0cf4b93c57adba61921bcb240e30d7.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-librsvg_99-librsvg",
+      "name": "librsvg",
+      "stage": "librsvg",
+      "script": "scripts.d/50-librsvg/99-librsvg.sh",
+      "license": "LGPL-2.1-or-later (vendored Rust crates under their own, mostly MIT OR Apache-2.0, licences)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/GNOME/librsvg.git",
+      "urls": [
+        "https://github.com/GNOME/librsvg.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "7612431eb02dc009319094f8513d63c1faaecfb4"
+      },
+      "dl": "git-mini-clone \"https://github.com/GNOME/librsvg.git\" \"7612431eb02dc009319094f8513d63c1faaecfb4\" \".\"\nmkdir .cargo && CARGO_HOME=\"$(mktemp -d)\" cargo vendor --versioned-dirs > .cargo/config.toml",
+      "btbn_cache_name": "99-librsvg_20412ad6b5a08e06a6b2f15951458980805d4c0f40b762745e4c2575169a8c3c.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libssh",
+      "name": "libssh",
+      "stage": "libssh",
+      "script": "scripts.d/50-libssh.sh",
+      "license": "LGPL-2.1-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://gitlab.com/libssh/libssh-mirror.git",
+      "urls": [
+        "https://gitlab.com/libssh/libssh-mirror.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "76e0a8639e61436c28d877586f65a7707edc6ee5"
+      },
+      "dl": "git-mini-clone \"https://gitlab.com/libssh/libssh-mirror.git\" \"76e0a8639e61436c28d877586f65a7707edc6ee5\" \".\"",
+      "btbn_cache_name": "50-libssh_ac0a192544cbf9bc9aaf242e5f5ad0fbb279e56d4acfca69960d626fa8f480c9.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "gitlab.com"
+      ]
+    },
+    {
+      "id": "25-libogg",
+      "name": "libogg",
+      "stage": "libogg",
+      "script": "scripts.d/25-libogg.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/xiph/ogg.git",
+      "urls": [
+        "https://github.com/xiph/ogg.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "06a5e0262cdc28aa4ae6797627a783b5010440f0"
+      },
+      "dl": "git-mini-clone \"https://github.com/xiph/ogg.git\" \"06a5e0262cdc28aa4ae6797627a783b5010440f0\" \".\"",
+      "btbn_cache_name": "25-libogg_bdea5ee518d129340be457dcc11c2cef63053ac3c827e71311caff1dd3c43339.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libtheora",
+      "name": "libtheora",
+      "stage": "libtheora",
+      "script": "scripts.d/50-libtheora.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/xiph/theora.git",
+      "urls": [
+        "https://github.com/xiph/theora.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "28fd5ec77f0ad0e07a371cef1047828116f6bd8a"
+      },
+      "dl": "git-mini-clone \"https://github.com/xiph/theora.git\" \"28fd5ec77f0ad0e07a371cef1047828116f6bd8a\" \".\"",
+      "btbn_cache_name": "50-libtheora_c5b1505081f2493a61c94a64ef8eef6de9b851447fab834bd5f9b6e35ee1d008.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "45-libvorbis",
+      "name": "libvorbis",
+      "stage": "libvorbis",
+      "script": "scripts.d/45-libvorbis.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/xiph/vorbis.git",
+      "urls": [
+        "https://github.com/xiph/vorbis.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "1b75110b5a2754ba1931d82dd83cb822b266a21d"
+      },
+      "dl": "git-mini-clone \"https://github.com/xiph/vorbis.git\" \"1b75110b5a2754ba1931d82dd83cb822b266a21d\" \".\"",
+      "btbn_cache_name": "45-libvorbis_0ab43e5711b2585b0c19dd71023f5852d755c633bda0215caad53dc63c62a644.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-libvpx",
+      "name": "libvpx",
+      "stage": "libvpx",
+      "script": "scripts.d/50-libvpx.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://chromium.googlesource.com/webm/libvpx",
+      "urls": [
+        "https://chromium.googlesource.com/webm/libvpx"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "5e680f30801d03c21078f8c4b772464752516211"
+      },
+      "dl": "git-mini-clone \"https://chromium.googlesource.com/webm/libvpx\" \"5e680f30801d03c21078f8c4b772464752516211\" \".\"",
+      "btbn_cache_name": "50-libvpx_66163f7ac0c48afe3d2318e764e53fcf97fff72e44b32a57727302baff6bd899.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "chromium.googlesource.com"
+      ]
+    },
+    {
+      "id": "50-libwebp",
+      "name": "libwebp",
+      "stage": "libwebp",
+      "script": "scripts.d/50-libwebp.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://chromium.googlesource.com/webm/libwebp",
+      "urls": [
+        "https://chromium.googlesource.com/webm/libwebp"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "5c168cd23b1872969c38e34b01b04dcf29849288"
+      },
+      "dl": "git-mini-clone \"https://chromium.googlesource.com/webm/libwebp\" \"5c168cd23b1872969c38e34b01b04dcf29849288\" \".\"",
+      "btbn_cache_name": "50-libwebp_79c6c8cf003854f9dc6cd81c05a1439d21e2a45650669646d1aaa3837370dddf.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "chromium.googlesource.com"
+      ]
+    },
+    {
+      "id": "50-libzmq",
+      "name": "libzmq",
+      "stage": "libzmq",
+      "script": "scripts.d/50-libzmq.sh",
+      "license": "MPL-2.0",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/zeromq/libzmq.git",
+      "urls": [
+        "https://github.com/zeromq/libzmq.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "46493370217ac135246617fa2f6ac819d8b61bfc"
+      },
+      "dl": "git-mini-clone \"https://github.com/zeromq/libzmq.git\" \"46493370217ac135246617fa2f6ac819d8b61bfc\" \".\"",
+      "btbn_cache_name": "50-libzmq_e68f6ea67cc2e84e0b320f3a4b5538dc90d97142264dc310dd8bbcb5f989d9e2.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-lilv_96-lv2",
+      "name": "lv2",
+      "stage": "lilv",
+      "script": "scripts.d/50-lilv/96-lv2.sh",
+      "license": "ISC",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/lv2/lv2.git",
+      "urls": [
+        "https://github.com/lv2/lv2.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "3c57dae600a5ad8d05acd53ee3490f7d91cb7be6"
+      },
+      "dl": "git-mini-clone \"https://github.com/lv2/lv2.git\" \"3c57dae600a5ad8d05acd53ee3490f7d91cb7be6\" \".\"",
+      "btbn_cache_name": "96-lv2_1833e554a5a1760aa41062569225bbb9856f09f3c23d37301074d82a17b0624e.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-lilv_96-serd",
+      "name": "serd",
+      "stage": "lilv",
+      "script": "scripts.d/50-lilv/96-serd.sh",
+      "license": "ISC",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/drobilla/serd.git",
+      "urls": [
+        "https://github.com/drobilla/serd.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "b6053bb2a4533e6a8e3821c1061f140d5e666938"
+      },
+      "dl": "git-mini-clone \"https://github.com/drobilla/serd.git\" \"b6053bb2a4533e6a8e3821c1061f140d5e666938\" \".\"",
+      "btbn_cache_name": "96-serd_257c27b8651c05a3b7179f2477bd69ed036feac4eb253312569096821e69a8e7.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-lilv_96-zix",
+      "name": "zix",
+      "stage": "lilv",
+      "script": "scripts.d/50-lilv/96-zix.sh",
+      "license": "ISC",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/drobilla/zix.git",
+      "urls": [
+        "https://github.com/drobilla/zix.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "17d632393f5addb6fa24dda2927b96515407cca7"
+      },
+      "dl": "git-mini-clone \"https://github.com/drobilla/zix.git\" \"17d632393f5addb6fa24dda2927b96515407cca7\" \".\"",
+      "btbn_cache_name": "96-zix_21e780c9ab8c0f8067c36bb53b76fcabc2dd828153b3f1ab082ed44281f62d13.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-lilv_97-sord",
+      "name": "sord",
+      "stage": "lilv",
+      "script": "scripts.d/50-lilv/97-sord.sh",
+      "license": "ISC",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/drobilla/sord.git",
+      "urls": [
+        "https://github.com/drobilla/sord.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "4b5232bb91e7f2f1b84df384494d073fabbcd312"
+      },
+      "dl": "git-mini-clone \"https://github.com/drobilla/sord.git\" \"4b5232bb91e7f2f1b84df384494d073fabbcd312\" \".\"",
+      "btbn_cache_name": "97-sord_6ef433b3c59e64a645002e31f929dfec02cbd979f0d70b5373173e1ca217125d.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-lilv_98-sratom",
+      "name": "sratom",
+      "stage": "lilv",
+      "script": "scripts.d/50-lilv/98-sratom.sh",
+      "license": "ISC",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/lv2/sratom.git",
+      "urls": [
+        "https://github.com/lv2/sratom.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "9e8ee84eed502e6030ce8bb49694fd28542b08fc"
+      },
+      "dl": "git-mini-clone \"https://github.com/lv2/sratom.git\" \"9e8ee84eed502e6030ce8bb49694fd28542b08fc\" \".\"",
+      "btbn_cache_name": "98-sratom_a7e01a157b247bfecbce4a5c63016fa503ddd5703ffc208af3f81805a7d30535.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-lilv_99-lilv",
+      "name": "lilv",
+      "stage": "lilv",
+      "script": "scripts.d/50-lilv/99-lilv.sh",
+      "license": "ISC",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/lv2/lilv.git",
+      "urls": [
+        "https://github.com/lv2/lilv.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "4b8f30055fa5cb4134a2eb45fc1555bc04289314"
+      },
+      "dl": "git-mini-clone \"https://github.com/lv2/lilv.git\" \"4b8f30055fa5cb4134a2eb45fc1555bc04289314\" \".\"",
+      "btbn_cache_name": "99-lilv_0543a3c15e7971c2371260e51aad5ead6ffbc7a539de39540a906ebf944d829d.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-onevpl",
+      "name": "onevpl",
+      "stage": "onevpl",
+      "script": "scripts.d/50-onevpl.sh",
+      "license": "MIT (Intel libvpl dispatcher)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/intel/libvpl.git",
+      "urls": [
+        "https://github.com/intel/libvpl.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "674d015bcb294bc39fa276e99a652ea045423e82"
+      },
+      "dl": "git-mini-clone \"https://github.com/intel/libvpl.git\" \"674d015bcb294bc39fa276e99a652ea045423e82\" \".\"",
+      "btbn_cache_name": "50-onevpl_c67accd07bdf24795034753f097eec4331f1a1174ce643cf5bcf94cb26ddd5e4.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [
+        {
+          "kind": "url",
+          "url": "https://github.com/intel/libvpl/pull/198.patch"
+        }
+      ],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-openal",
+      "name": "openal",
+      "stage": "openal",
+      "script": "scripts.d/50-openal.sh",
+      "license": "LGPL-2.0-or-later (openal-soft)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/kcat/openal-soft.git",
+      "urls": [
+        "https://github.com/kcat/openal-soft.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "c89b8cf7bba4822f230c69f0a6696a52e5322dca"
+      },
+      "dl": "git-mini-clone \"https://github.com/kcat/openal-soft.git\" \"c89b8cf7bba4822f230c69f0a6696a52e5322dca\" \".\"",
+      "btbn_cache_name": "50-openal_0700515d0775bd9b112b23ea3a1d34d3c041a100f4ab32be289061310616a628.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-openapv",
+      "name": "openapv",
+      "stage": "openapv",
+      "script": "scripts.d/50-openapv.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/AcademySoftwareFoundation/openapv.git",
+      "urls": [
+        "https://github.com/AcademySoftwareFoundation/openapv.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "a58ce739be0dfb083643d929aee8f0e0ba9bdf63"
+      },
+      "dl": "git-mini-clone \"https://github.com/AcademySoftwareFoundation/openapv.git\" \"a58ce739be0dfb083643d929aee8f0e0ba9bdf63\" \".\"\ngit fetch --unshallow --filter=blob:none",
+      "btbn_cache_name": "50-openapv_f9089a3b6e8982ec62ef7be45a6b23c21641728fbfdd52aa94a39ffc294800aa.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "45-opencl",
+      "name": "opencl",
+      "stage": "opencl",
+      "script": "scripts.d/45-opencl.sh",
+      "license": "Apache-2.0 (OpenCL-Headers, OpenCL-ICD-Loader)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/KhronosGroup/OpenCL-Headers.git",
+      "urls": [
+        "https://github.com/KhronosGroup/OpenCL-Headers.git",
+        "https://github.com/KhronosGroup/OpenCL-ICD-Loader.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "e6060189f4ebe8b52d885c37af71b9a50c272154",
+        "SCRIPT_COMMIT2": "5192c84f8059e5f703e5452929b613f9487f6e4c"
+      },
+      "dl": "git-mini-clone \"https://github.com/KhronosGroup/OpenCL-Headers.git\" \"e6060189f4ebe8b52d885c37af71b9a50c272154\" \"headers\"\ngit-mini-clone \"https://github.com/KhronosGroup/OpenCL-ICD-Loader.git\" \"5192c84f8059e5f703e5452929b613f9487f6e4c\" loader",
+      "btbn_cache_name": "45-opencl_060b32b588efb8a3dfd71f4ff90e2247d753cd22ecf2713cf7ad2814ef23c71a.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-opencore-amr",
+      "name": "opencore-amr",
+      "stage": "opencore-amr",
+      "script": "scripts.d/50-opencore-amr.sh",
+      "license": "Apache-2.0",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://git.code.sf.net/p/opencore-amr/code",
+      "urls": [
+        "https://git.code.sf.net/p/opencore-amr/code"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "7dba8c32238418ce0b316a852b2224df586ca896"
+      },
+      "dl": "git-mini-clone \"https://git.code.sf.net/p/opencore-amr/code\" \"7dba8c32238418ce0b316a852b2224df586ca896\" \".\"",
+      "btbn_cache_name": "50-opencore-amr_5d7ec3b8ffdd0f32309a659256916e3286724f08acf0f625a4b4f1f9c17ebf7c.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "git.code.sf.net"
+      ]
+    },
+    {
+      "id": "50-openh264",
+      "name": "openh264",
+      "stage": "openh264",
+      "script": "scripts.d/50-openh264.sh",
+      "license": "BSD-2-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/cisco/openh264.git",
+      "urls": [
+        "https://github.com/cisco/openh264.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "8b2d28faade10d74d99ac80e199aef664c9c5a3b"
+      },
+      "dl": "git-mini-clone \"https://github.com/cisco/openh264.git\" \"8b2d28faade10d74d99ac80e199aef664c9c5a3b\" \".\"",
+      "btbn_cache_name": "50-openh264_df57c5a2e7a2f7a6becacd28a386ff00892c36cf873d6ea9a758a95e626a3cee.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-openjpeg",
+      "name": "openjpeg",
+      "stage": "openjpeg",
+      "script": "scripts.d/50-openjpeg.sh",
+      "license": "BSD-2-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/uclouvain/openjpeg.git",
+      "urls": [
+        "https://github.com/uclouvain/openjpeg.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "8314119b067c0fc77834731168daaebd379fdb12"
+      },
+      "dl": "git-mini-clone \"https://github.com/uclouvain/openjpeg.git\" \"8314119b067c0fc77834731168daaebd379fdb12\" \".\"",
+      "btbn_cache_name": "50-openjpeg_b35ab3ef10d52ce49eb8146e05af61e7560bf3b18aa2dd750cb5b083079caac4.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-openmpt",
+      "name": "openmpt",
+      "stage": "openmpt",
+      "script": "scripts.d/50-openmpt.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/OpenMPT/openmpt.git",
+      "urls": [
+        "https://github.com/OpenMPT/openmpt.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "f83cedb0cd5446e4dfaa83ac97e3087107e26767"
+      },
+      "dl": "git-mini-clone \"https://github.com/OpenMPT/openmpt.git\" \"f83cedb0cd5446e4dfaa83ac97e3087107e26767\" \".\"",
+      "btbn_cache_name": "50-openmpt_fa065e57891ed593a40690197f5c027d148bb241a74dbfb31cef5bce63a9887e.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-rav1e",
+      "name": "rav1e",
+      "stage": "rav1e",
+      "script": "scripts.d/50-rav1e.sh",
+      "license": "BSD-2-Clause (plus AOMedia Patent License 1.0; Rust crates under their own licences)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/xiph/rav1e.git",
+      "urls": [
+        "https://github.com/xiph/rav1e.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "31435de9d76fddd38f6dcc31d4014574cebb2092"
+      },
+      "dl": "git-mini-clone \"https://github.com/xiph/rav1e.git\" \"31435de9d76fddd38f6dcc31d4014574cebb2092\" \".\"",
+      "btbn_cache_name": "50-rav1e_b2d3a4caec12576416c156eb16b4f83433caf3dc3a8270ed0bfe4fb74098dd54.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [
+        {
+          "kind": "cargo-lockfile",
+          "note": "crates are fetched from crates.io during the stage build; `cargo update cc` re-resolves the cc build-dependency at build time"
+        }
+      ],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "45-libsamplerate",
+      "name": "libsamplerate",
+      "stage": "libsamplerate",
+      "script": "scripts.d/45-libsamplerate.sh",
+      "license": "BSD-2-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/libsndfile/libsamplerate.git",
+      "urls": [
+        "https://github.com/libsndfile/libsamplerate.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "0844c208f683527c08ea8a80acc13b398aa9c8bf"
+      },
+      "dl": "git-mini-clone \"https://github.com/libsndfile/libsamplerate.git\" \"0844c208f683527c08ea8a80acc13b398aa9c8bf\" \".\"",
+      "btbn_cache_name": "45-libsamplerate_0810498d6a2fa7146ea7d224b33501c0e4ea37740e12902f1ffa9ab432f4213c.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-rubberband",
+      "name": "rubberband",
+      "stage": "rubberband",
+      "script": "scripts.d/50-rubberband.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/breakfastquay/rubberband.git",
+      "urls": [
+        "https://github.com/breakfastquay/rubberband.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "e4296ac80b1170018a110bc326fd0d45a0eb27d6"
+      },
+      "dl": "git-mini-clone \"https://github.com/breakfastquay/rubberband.git\" \"e4296ac80b1170018a110bc326fd0d45a0eb27d6\" \".\"",
+      "btbn_cache_name": "50-rubberband_5d3ca7b4a1f4c07ead3f23ba9c7a3736384a9394a34e41bf70a78075e0ed9593.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-sdl",
+      "name": "sdl",
+      "stage": "sdl",
+      "script": "scripts.d/50-sdl.sh",
+      "license": "Zlib",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/libsdl-org/SDL.git",
+      "urls": [
+        "https://github.com/libsdl-org/SDL.git"
+      ],
+      "revisions": {
+        "SCRIPT_BRANCH": "SDL2",
+        "SCRIPT_COMMIT": "b90ac95029d801c5abc59472ba8e2200dff31e1e"
+      },
+      "dl": "git-mini-clone \"https://github.com/libsdl-org/SDL.git\" \"b90ac95029d801c5abc59472ba8e2200dff31e1e\" \".\"",
+      "btbn_cache_name": "50-sdl_eee5ab03d781d41488d330d6a245a878eb37f50acea8ea99d6bcc807af794507.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-snappy",
+      "name": "snappy",
+      "stage": "snappy",
+      "script": "scripts.d/50-snappy.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/google/snappy.git",
+      "urls": [
+        "https://github.com/google/snappy.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "9c28114a38866f6deeaa826db918293bc28ae410"
+      },
+      "dl": "git-mini-clone \"https://github.com/google/snappy.git\" \"9c28114a38866f6deeaa826db918293bc28ae410\" \".\"",
+      "btbn_cache_name": "50-snappy_8e53b9981df8ab90cbd88fd1dd2e976bf99f9b13e069ada011d6fcb5fd4a1dec.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-soxr",
+      "name": "soxr",
+      "stage": "soxr",
+      "script": "scripts.d/50-soxr.sh",
+      "license": "LGPL-2.1-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://git.code.sf.net/p/soxr/code",
+      "urls": [
+        "https://git.code.sf.net/p/soxr/code"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "945b592b70470e29f917f4de89b4281fbbd540c0"
+      },
+      "dl": "git-mini-clone \"https://git.code.sf.net/p/soxr/code\" \"945b592b70470e29f917f4de89b4281fbbd540c0\" \".\"",
+      "btbn_cache_name": "50-soxr_d24c000584012b62b406f09325af85575932219b972b87ab3e2b1037bdc97c6a.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "git.code.sf.net"
+      ]
+    },
+    {
+      "id": "50-srt",
+      "name": "srt",
+      "stage": "srt",
+      "script": "scripts.d/50-srt.sh",
+      "license": "MPL-2.0",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/Haivision/srt.git",
+      "urls": [
+        "https://github.com/Haivision/srt.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "ff8ab25c57aece5b7351defe36dacc94fc28527f"
+      },
+      "dl": "git-mini-clone \"https://github.com/Haivision/srt.git\" \"ff8ab25c57aece5b7351defe36dacc94fc28527f\" \".\"",
+      "btbn_cache_name": "50-srt_b47647b4bf2fd74999325f793b3c0968d3513719af9b3008922131e8c465e179.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-svtav1",
+      "name": "svtav1",
+      "stage": "svtav1",
+      "script": "scripts.d/50-svtav1.sh",
+      "license": "BSD-3-Clause-Clear (plus AOMedia Patent License 1.0)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://gitlab.com/AOMediaCodec/SVT-AV1.git",
+      "urls": [
+        "https://gitlab.com/AOMediaCodec/SVT-AV1.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "5ed9ffbcb5086da23f30fe9bc5b00145358462da"
+      },
+      "dl": "git clone \"https://gitlab.com/AOMediaCodec/SVT-AV1.git\" . && git checkout \"5ed9ffbcb5086da23f30fe9bc5b00145358462da\"",
+      "btbn_cache_name": "50-svtav1_46a954dc6763b77684fc6cc76317f9eb478ab707091181bb8bf3ccc6f245296f.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "gitlab.com"
+      ]
+    },
+    {
+      "id": "50-twolame",
+      "name": "twolame",
+      "stage": "twolame",
+      "script": "scripts.d/50-twolame.sh",
+      "license": "LGPL-2.1-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/njh/twolame.git",
+      "urls": [
+        "https://github.com/njh/twolame.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "6fced852d4d5cfad58cf9dbe3ea619b08e87d398"
+      },
+      "dl": "git-mini-clone \"https://github.com/njh/twolame.git\" \"6fced852d4d5cfad58cf9dbe3ea619b08e87d398\" \".\"",
+      "btbn_cache_name": "50-twolame_b034b56f3c8caa730922980b6e8aca15c6f3b46e3fa98d3229c337aeb7858f71.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-uavs3d",
+      "name": "uavs3d",
+      "stage": "uavs3d",
+      "script": "scripts.d/50-uavs3d.sh",
+      "license": "BSD-3-Clause",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/uavs3/uavs3d.git",
+      "urls": [
+        "https://github.com/uavs3/uavs3d.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "0e20d2c291853f196c68922a264bcd8471d75b68"
+      },
+      "dl": "git clone \"https://github.com/uavs3/uavs3d.git\" . && git checkout \"0e20d2c291853f196c68922a264bcd8471d75b68\"",
+      "btbn_cache_name": "50-uavs3d_f5c1983f0fc2360d5846298e08a8f89f2f345caa3beb83100ca9b48eff5ded6b.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-vaapi_50-libva",
+      "name": "libva",
+      "stage": "vaapi",
+      "script": "scripts.d/50-vaapi/50-libva.sh",
+      "license": "MIT",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/intel/libva.git",
+      "urls": [
+        "https://github.com/intel/libva.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "6b07f7100512817f736967e899b8c26313c20623"
+      },
+      "dl": "git-mini-clone \"https://github.com/intel/libva.git\" \"6b07f7100512817f736967e899b8c26313c20623\" \".\"",
+      "btbn_cache_name": "50-libva_2bc55ab7571e4ab9d59dc473d3dfaebb2cbc6caca5da95e1e680eaae56e62d03.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-vidstab",
+      "name": "vidstab",
+      "stage": "vidstab",
+      "script": "scripts.d/50-vidstab.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/georgmartius/vid.stab.git",
+      "urls": [
+        "https://github.com/georgmartius/vid.stab.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "e2445c4081658318223762a696eb1c645c2d7168"
+      },
+      "dl": "git-mini-clone \"https://github.com/georgmartius/vid.stab.git\" \"e2445c4081658318223762a696eb1c645c2d7168\" \".\"",
+      "btbn_cache_name": "50-vidstab_4775a069821691e584b2eb878047d58081f140d98fc8d3c759766f099723179e.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-vvenc",
+      "name": "vvenc",
+      "stage": "vvenc",
+      "script": "scripts.d/50-vvenc.sh",
+      "license": "BSD-3-Clause-Clear",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/fraunhoferhhi/vvenc.git",
+      "urls": [
+        "https://github.com/fraunhoferhhi/vvenc.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "b1cfb2ad495af6ae4cc214b7a060e8b4166c4629"
+      },
+      "dl": "git-mini-clone \"https://github.com/fraunhoferhhi/vvenc.git\" \"b1cfb2ad495af6ae4cc214b7a060e8b4166c4629\" \".\"",
+      "btbn_cache_name": "50-vvenc_7f1746781e3f2a5a225448e524e8f8ee11540497871a44a82fa21768f1c82442.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-x264",
+      "name": "x264",
+      "stage": "x264",
+      "script": "scripts.d/50-x264.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://code.videolan.org/videolan/x264.git",
+      "urls": [
+        "https://code.videolan.org/videolan/x264.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "0480cb05fa188d37ae87e8f4fd8f1aea3711f7ee"
+      },
+      "dl": "git-mini-clone \"https://code.videolan.org/videolan/x264.git\" \"0480cb05fa188d37ae87e8f4fd8f1aea3711f7ee\" \".\"",
+      "btbn_cache_name": "50-x264_7aee4cf46b7c0eff1a5ad3d23ae43a29562065ef2866a4a883d7ad2db0fb755d.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "code.videolan.org"
+      ]
+    },
+    {
+      "id": "50-x265",
+      "name": "x265",
+      "stage": "x265",
+      "script": "scripts.d/50-x265.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/Multicorewareinc/x265.git",
+      "urls": [
+        "https://github.com/Multicorewareinc/x265.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "020d7054dbecfd3be8e62efe33ff8a305d41856e"
+      },
+      "dl": "git clone --filter=blob:none \"https://github.com/Multicorewareinc/x265.git\" . && git checkout \"020d7054dbecfd3be8e62efe33ff8a305d41856e\"",
+      "btbn_cache_name": "50-x265_b37b40782670703ea27b2ac7c6b8a4d89f6753cc82f1a6fea29fa60d9fa6b435.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-xavs2",
+      "name": "xavs2",
+      "stage": "xavs2",
+      "script": "scripts.d/50-xavs2.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/pkuvcl/xavs2.git",
+      "urls": [
+        "https://github.com/pkuvcl/xavs2.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "eae1e8b9d12468059bdd7dee893508e470fa83d8"
+      },
+      "dl": "git clone \"https://github.com/pkuvcl/xavs2.git\" . && git checkout \"eae1e8b9d12468059bdd7dee893508e470fa83d8\"",
+      "btbn_cache_name": "50-xavs2_983aacbab6d33318bf9c4742b41a1ed9d42afc12a0493ba97d07404a99734009.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-xvid",
+      "name": "xvid",
+      "stage": "xvid",
+      "script": "scripts.d/50-xvid.sh",
+      "license": "GPL-2.0-or-later",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://svn.xvid.org/trunk/xvidcore",
+      "urls": [
+        "https://svn.xvid.org/trunk/xvidcore",
+        "https://svn.xvid.org/trunk/xvidcore@2204"
+      ],
+      "revisions": {
+        "SCRIPT_REV": "2204"
+      },
+      "dl": "retry-tool sh -c \"rm -rf xvid && svn --non-interactive checkout --username 'anonymous' --password '' 'https://svn.xvid.org/trunk/xvidcore@2204' xvid\" && cd xvid",
+      "btbn_cache_name": "50-xvid_03619a39e7e15a372b56fc954435c35668ed47258d7e7d3f2e47ba521e3b884f.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "svn.xvid.org"
+      ]
+    },
+    {
+      "id": "25-xz",
+      "name": "xz",
+      "stage": "xz",
+      "script": "scripts.d/25-xz.sh",
+      "license": "0BSD (liblzma)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/tukaani-project/xz.git",
+      "urls": [
+        "https://github.com/tukaani-project/xz.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "3b1efb04d17c3a9ef7f473d73af13f1531428ffe"
+      },
+      "dl": "git-mini-clone \"https://github.com/tukaani-project/xz.git\" \"3b1efb04d17c3a9ef7f473d73af13f1531428ffe\" \".\"",
+      "btbn_cache_name": "25-xz_b47aea19d87bc74ee9a1ba179e240b0c2998eed272c980ba9065827d8cfb0276.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-zimg",
+      "name": "zimg",
+      "stage": "zimg",
+      "script": "scripts.d/50-zimg.sh",
+      "license": "WTFPL",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/sekrit-twc/zimg.git",
+      "urls": [
+        "https://github.com/sekrit-twc/zimg.git"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "67e0603271c080e22c8429856dd4a8a56587e61e"
+      },
+      "dl": "git-mini-clone \"https://github.com/sekrit-twc/zimg.git\" \"67e0603271c080e22c8429856dd4a8a56587e61e\" \".\"\ngit submodule update --init --recursive --depth=1",
+      "btbn_cache_name": "50-zimg_7ac9b5905a13db62bae8b61a2a7b3806f25a5f3e173cc0c6c79edf9f38d8b437.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "50-zvbi",
+      "name": "zvbi",
+      "stage": "zvbi",
+      "script": "scripts.d/50-zvbi.sh",
+      "license": "LGPL-2.1-or-later (library; some tools GPL-2.0-or-later)",
+      "role": "statically linked into ffmpeg.exe",
+      "repo": "https://github.com/zapping-vbi/zvbi",
+      "urls": [
+        "https://github.com/zapping-vbi/zvbi"
+      ],
+      "revisions": {
+        "SCRIPT_COMMIT": "d3a5ee9f2b047bf16cd1ee5ccf6ec05ee75409d0"
+      },
+      "dl": "git-mini-clone \"https://github.com/zapping-vbi/zvbi\" \"d3a5ee9f2b047bf16cd1ee5ccf6ec05ee75409d0\" \".\"",
+      "btbn_cache_name": "50-zvbi_7369ec5938a995eb4283992070b303e140fc8a3b5f53d80e2a5df0b84794a75b.tar.xz",
+      "mirror_fallbacks": [],
+      "build_time_fetches": [],
+      "hosts": [
+        "github.com"
+      ]
+    }
+  ],
+  "toolchain": [
+    {
+      "name": "gcc",
+      "version": "16.2.0",
+      "role": "runtime linked into ffmpeg.exe (libgcc, libstdc++, libgomp) + cross compiler",
+      "license": "GPL-3.0-or-later WITH GCC-exception-3.1 (runtime libraries)",
+      "url": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz",
+      "sha256": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e",
+      "sha256_source": "crosstool-ng b1a94f65c518 packages/gcc/16.2.0/chksum",
+      "evidence": "binary contains 'GCC: (crosstool-NG 1.29.0.7_b1a94f6) 16.2.0'; images/base-win64/ct-ng-config CT_GCC_VERSION=16.2.0; configure uses --extra-libs=-lgomp and CFLAGS -static-libgcc -static-libstdc++"
+    },
+    {
+      "name": "crosstool-ng",
+      "version": "1.29.0.7_b1a94f6",
+      "role": "toolchain build recipe (applies packages/gcc/16.2.0/*.patch to GCC)",
+      "license": "GPL-2.0 (crosstool-NG scripts; bundled patches carry their own terms - see COPYING in the tree)",
+      "repo": "https://github.com/crosstool-ng/crosstool-ng.git",
+      "commit": "b1a94f65c5187d99037a4e2f57aefbdf995a9677",
+      "evidence": "embedded 'crosstool-NG 1.29.0.7_b1a94f6'; images/base-win64/Dockerfile clones crosstool-ng and builds with ct-ng-config"
+    },
+    {
+      "name": "rust-src",
+      "version": "1.98.1",
+      "role": "Rust standard library linked into ffmpeg.exe via the rav1e and librsvg static libraries",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://static.rust-lang.org/dist/rust-src-1.98.1.tar.xz",
+      "sha256": "5c846ebcebcc7e2e0777a4cdaa12051691593f16a7e94edbae5e6241cc62d98c",
+      "sha256_source": "https://static.rust-lang.org/dist/rust-src-1.98.1.tar.xz.sha256",
+      "evidence": "binary contains /rustc/48a229ceaefd4985c50990b14116b6d856af0985/ paths; that rust-lang/rust commit's src/version is 1.98.1"
+    },
+    {
+      "name": "binutils",
+      "version": "2.47",
+      "role": "assembler/linker (general-purpose build tool; not linked into the binary)",
+      "license": "GPL-3.0-or-later",
+      "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.47.tar.xz",
+      "sha256": "154ab23b60070e8f27013c22977f1129425d67d1e8acd6e13010e617811e4cff",
+      "sha256_source": "crosstool-ng b1a94f65c518 packages/binutils/2.47/chksum",
+      "optional": true
+    }
+  ],
+  "extra_inputs": [
+    {
+      "name": "libvpl-pr198-9cb2dc56.patch",
+      "for_stage": "onevpl",
+      "url": "https://github.com/intel/libvpl/commit/9cb2dc5643480bde33909e11b0ec1ddeb6339f45.patch",
+      "sha256": "37cfec93ffd6cdc804d1aa576069d843db590c735165e50a058ad692103a8e26",
+      "license": "MIT",
+      "reason": "scripts.d/50-onevpl.sh runs `curl -fL https://github.com/intel/libvpl/pull/198.patch | git am` during its build. PR #198 has one commit (9cb2dc56, 2026-09-01) and was last updated 2026-09-23, before the build; on 2026-09-27 the PR patch and this commit patch are byte-identical."
+    },
+    {
+      "name": "cc-1.5.1.crate",
+      "for_stage": "rav1e",
+      "url": "https://static.crates.io/crates/cc/cc-1.5.1.crate",
+      "sha256": "f360145194ee8e21db5ee7f3fcd4fe52210864c75c985dae33218202c8bbe040",
+      "license": "MIT OR Apache-2.0",
+      "reason": "scripts.d/50-rav1e.sh runs `cargo update cc` at build time, which moves the lockfile's cc 1.2.26 to the newest compatible 1.x on crates.io. The newest 1.x published before the job started (2026-09-26T12:29:47Z) is 1.5.1 (published 2026-09-25T13:33Z). cc is a build-script helper and is not linked into ffmpeg.exe; included for completeness. `cargo update cc` can also refresh cc's own small dependencies (jobserver, shlex, find-msvc-tools); those are build-time only as well."
+    }
+  ],
+  "known_gaps": [
+    "Compilers are identified from strings embedded in the binary rather than from a pinned image: BtbN's images install Ubuntu 26.04 packages, `rustup` stable and a crosstool-NG clone at image-build time. The binary itself names GCC 16.2.0 built by crosstool-NG 1.29.0.7_b1a94f6 and rustc commit 48a229ceaefd (Rust 1.98.1); those sources are included under toolchain/.",
+    "General-purpose build tools (Ubuntu packages, cmake, meson, nasm, cargo-c, binutils, the compiler's own host libraries gmp/mpfr/mpc/isl) are not part of the linked work and are not included by default (GPLv3 section 1 excludes general-purpose tools used unmodified). binutils 2.47 can be added with --with-optional-toolchain.",
+    "BtbN's CI reuses Docker layer caches (cache-from). A stage layer is only reused when its Dockerfile instruction and mounted stage script/download cache are unchanged, so a cached layer was built from the same pinned source recorded here.",
+    "`.git` metadata is removed from every fetched tree so the archive is byte-reproducible; each stage archive's SOURCE-REVISIONS.scoutmind.txt keeps the commit and remote of every repository. Some projects derive cosmetic version strings from git metadata at build time (for example x264's build number).",
+    "rav1e: `cargo update cc` re-resolved the cc build dependency at build time (see extra_inputs: best determination cc 1.5.1). All crates linked into ffmpeg.exe come from rav1e's committed Cargo.lock, which the archive vendors with checksum verification.",
+    "Only bin/ffmpeg.exe is redistributed by ScoutMind (ffprobe.exe and ffplay.exe from the same zip are not shipped); the same sources cover all three."
+  ],
+  "hosts": {
+    "aomedia.googlesource.com": {
+      "reachable": true,
+      "probe": "git",
+      "url": "https://aomedia.googlesource.com/aom",
+      "detail": "git ls-remote ok",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "chromium.googlesource.com": {
+      "reachable": true,
+      "probe": "git",
+      "url": "https://chromium.googlesource.com/webm/libvpx",
+      "detail": "git ls-remote ok",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "code.videolan.org": {
+      "reachable": true,
+      "probe": "git",
+      "url": "https://code.videolan.org/videolan/dav1d.git",
+      "detail": "git ls-remote ok",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "ftp.gnu.org": {
+      "reachable": true,
+      "probe": "http",
+      "url": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz",
+      "detail": "HTTP 200",
+      "checked_at": "2026-09-27T07:59:42Z"
+    },
+    "git.code.sf.net": {
+      "reachable": true,
+      "probe": "git",
+      "url": "https://git.code.sf.net/p/mingw-w64/mingw-w64.git",
+      "detail": "git ls-remote ok",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "git.ffmpeg.org": {
+      "reachable": true,
+      "probe": "git",
+      "url": "https://git.ffmpeg.org/ffmpeg.git",
+      "detail": "git ls-remote ok",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "git.git.savannah.gnu.org": {
+      "reachable": false,
+      "probe": "git",
+      "url": "git://git.git.savannah.gnu.org/libiconv.git",
+      "detail": "git:// protocol (port 9418): fatal: unable to look up git.git.savannah.gnu.org (port 9418) (nodename nor servname provided, or not known) - BLOCKED from this machine (git:// is not proxied); the assembler falls back to https://git.savannah.gnu.org for both libiconv and gnulib (same pinned commits).",
+      "checked_at": "2026-09-27T07:59:42Z"
+    },
+    "git.savannah.gnu.org": {
+      "reachable": true,
+      "probe": "git",
+      "url": "https://git.savannah.gnu.org/git/gnulib.git",
+      "detail": "slow but reachable: git ls-remote https://git.savannah.gnu.org/git/libiconv.git took 2m04s (redirects to https.git.savannah.gnu.org) and returned HEAD 1df3087b; the 45s automated probe timed out. The assembly fetched libiconv and gnulib from here successfully.",
+      "checked_at": "2026-09-27T08:02:44Z"
+    },
+    "github.com": {
+      "reachable": true,
+      "probe": "git",
+      "url": "https://github.com/BtbN/FFmpeg-Builds.git",
+      "detail": "git ls-remote ok",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "gitlab.com": {
+      "reachable": true,
+      "probe": "git",
+      "url": "https://gitlab.com/libssh/libssh-mirror.git",
+      "detail": "git ls-remote ok",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "gitlab.freedesktop.org": {
+      "reachable": true,
+      "probe": "git",
+      "url": "https://gitlab.freedesktop.org/freetype/freetype.git",
+      "detail": "git ls-remote ok",
+      "checked_at": "2026-09-27T07:59:44Z"
+    },
+    "https.git.savannah.gnu.org": {
+      "reachable": true,
+      "probe": "http",
+      "url": "https://https.git.savannah.gnu.org/git/libiconv.git/info/refs?service=git-upload-pack",
+      "detail": "slow but reachable: git ls-remote https://git.savannah.gnu.org/git/libiconv.git took 2m04s (redirects to https.git.savannah.gnu.org) and returned HEAD 1df3087b; the 45s automated probe timed out. The assembly fetched libiconv and gnulib from here successfully.",
+      "checked_at": "2026-09-27T08:02:44Z"
+    },
+    "index.crates.io": {
+      "reachable": true,
+      "probe": "http",
+      "url": "https://index.crates.io/config.json",
+      "detail": "HTTP 200",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "media.xiph.org": {
+      "reachable": true,
+      "probe": "http",
+      "url": "https://media.xiph.org/opus/models/",
+      "detail": "HTTP 200 (Opus DNN model data, fetched by libopus autogen.sh with sha256 check)",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "raw.githubusercontent.com": {
+      "reachable": true,
+      "probe": "http",
+      "url": "https://raw.githubusercontent.com/",
+      "detail": "HTTP 200",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "static.crates.io": {
+      "reachable": true,
+      "probe": "http",
+      "url": "https://static.crates.io/crates/cc/cc-1.5.1.crate",
+      "detail": "HTTP 200",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "static.rust-lang.org": {
+      "reachable": true,
+      "probe": "http",
+      "url": "https://static.rust-lang.org/dist/rust-src-1.98.1.tar.xz",
+      "detail": "HTTP 200",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "svn.code.sf.net": {
+      "reachable": true,
+      "probe": "svn",
+      "url": "https://svn.code.sf.net/p/lame/svn/trunk/lame",
+      "detail": "svn/WebDAV PROPFIND HTTP 207",
+      "checked_at": "2026-09-27T07:59:43Z"
+    },
+    "svn.xvid.org": {
+      "reachable": true,
+      "probe": "svn",
+      "url": "https://svn.xvid.org/trunk/xvidcore",
+      "detail": "svn/WebDAV HTTP 401 without credentials (server uses the public 'anonymous' login, as BtbN's script does)",
+      "checked_at": "2026-09-27T07:59:44Z"
+    }
+  }
+}

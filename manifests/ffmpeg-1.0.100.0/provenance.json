@@ -1,0 +1,59 @@
+{
+  "binary": {
+    "distributed_in": "ScoutMind for Windows 1.0.100.0, the build live in the Microsoft Store as of 2026-09-27 (source commit 1a81579), installed as bin/ffmpeg.exe. Not byte-identical to the ffmpeg.exe in 1.0.119.0/V2 (b04aa739..., see btbn-win64-gpl-9.0/).",
+    "archive": "ffmpeg-N-126435-gf93cd72dde-win64-gpl.zip",
+    "archive_sha256": "cd75d5135fdd98f386043607179f4d5d471dee1707dc63509e292dff170586f3",
+    "archive_sha256_source": "packaging/hunter_cam.spec at 1a81579 (_download_verified refuses any other file, so the packaged ffmpeg.exe came from this exact zip)",
+    "archive_url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2026-09-06-13-06/ffmpeg-N-126435-gf93cd72dde-win64-gpl.zip",
+    "archive_note": "BtbN has pruned this release: on 2026-09-27 the GitHub API returns 404 for both the tag and the release; the original zip is no longer available from BtbN. The binary was therefore read from the shipped package instead (extracted_from).",
+    "extracted_from": {
+      "release_archive": "releases/v1/1.0.100.0-live/scoutmind-windows-x64.zip (SHA-256 b70012e0b4d7f050cbbee167d5d7552db0923e7c6a2617eab924e8ef720dadb3; private mirror scoutmind-v1-1.0.100.0-live-windows-x64.zip)",
+      "msix": "scoutmind-windows-x64.msix inside it (SHA-256 82986e02f48fe1e6cce1c691b1558513603a20f110c5fbb1c9efaecc579bf7c1, 699861122 bytes; AppxManifest Version 1.0.100.0)",
+      "member": "bin/ffmpeg.exe",
+      "member_date": "2026-09-17T06:35:38 (zip local time)"
+    }
+  },
+  "builder": {
+    "tag": "autobuild-2026-09-06-13-06",
+    "tag_commit_verified": "The tag has been pruned, so it cannot be dereferenced any more. Identified instead from GitHub Actions (2026-09-27): run 34032460921 is the only build.yml run on 2026-09-06, it is the scheduled run at head 8267213e26c1031621e6e1210fe3aa4867214f6a, and its 'Publish release' job started at 2026-09-06T13:05:56Z, which is the timestamp in the tag name. The binary's version string N-126435-gf93cd72dde-20260906 carries the same build date, and the configure line generated from BtbN's scripts at 8267213e for 'win64 gpl' matches the one embedded in the binary.",
+    "workflow_run": {
+      "id": 34032460921,
+      "url": "https://github.com/BtbN/FFmpeg-Builds/actions/runs/34032460921",
+      "workflow": "Build FFmpeg (.github/workflows/build.yml)",
+      "event": "schedule",
+      "head_sha": "8267213e26c1031621e6e1210fe3aa4867214f6a",
+      "created_at": "2026-09-06T12:13:19Z",
+      "completed_at": "2026-09-06T13:35:30Z",
+      "job": "Build ffmpeg (win64, gpl)",
+      "job_id": 101487116347,
+      "job_started_at": "2026-09-06T12:33:10Z",
+      "job_completed_at": "2026-09-06T12:47:22Z",
+      "image_job": "Build target-variant image (ubuntu-latest, win64, gpl)",
+      "image_job_id": 101485339787,
+      "release_job": "Publish release",
+      "release_job_id": 101491485926,
+      "release_job_started_at": "2026-09-06T13:05:56Z",
+      "job_log": "expired (GitHub returned HTTP 410 on 2026-09-27)"
+    },
+    "previous_scheduled_run_same_head": "33965416163 (2026-09-05) also ran at 8267213e; its release would be tagged autobuild-2026-09-05-*, and its binary would carry -20260905"
+  },
+  "extra_inputs": [
+    {
+      "name": "cc-1.4.5.crate",
+      "for_stage": "rav1e",
+      "url": "https://static.crates.io/crates/cc/cc-1.4.5.crate",
+      "sha256": "005ec2760ca554fae18df7a11195552ec576cd665632a881bc011d5bb2fd4d80",
+      "license": "MIT OR Apache-2.0",
+      "reason": "scripts.d/50-rav1e.sh runs `cargo update cc` at build time, which moves the lockfile's cc to the newest compatible 1.x on crates.io. The newest 1.x published before the job started (2026-09-06T12:33:10Z) is 1.4.5 (published 2026-09-04T09:28:57Z). If BtbN's Docker layer cache reused an older rav1e layer, an older 1.x was used instead; the exact version cannot be read from the binary because cc is a build-script helper that is not linked into ffmpeg.exe. Included for completeness."
+    }
+  ],
+  "known_gaps": [
+    "The upstream zip is no longer downloadable (BtbN pruned the dated release) and was not mirrored. The binary's identity rests on the SHA-256 pin in packaging/hunter_cam.spec at 1a81579, the embedded version string and the configure cross-check.",
+    "Compilers are identified from strings embedded in the binary rather than from a pinned image: BtbN's images install Ubuntu packages, `rustup` stable and a crosstool-NG clone at image-build time. The binary itself names GCC 15.2.0 built by crosstool-NG 1.28.0.23_185f348 and rustc commit 8bab26f4f68e (Rust 1.97.1); those sources are included under toolchain/.",
+    "General-purpose build tools (Ubuntu packages, cmake, meson, nasm, cargo-c, binutils, the compiler's own host libraries gmp/mpfr/mpc/isl) are not part of the linked work and are not included by default (GPLv3 section 1 excludes general-purpose tools used unmodified). binutils 2.46.0 can be added with --with-optional-toolchain.",
+    "BtbN's CI reuses Docker layer caches (cache-from). A stage layer is only reused when its Dockerfile instruction and mounted stage script/download cache are unchanged, so a cached layer was built from the same pinned source recorded here.",
+    "`.git` metadata is removed from every fetched tree so the archive is byte-reproducible; each stage archive's SOURCE-REVISIONS.scoutmind.txt keeps the commit and remote of every repository. Some projects derive cosmetic version strings from git metadata at build time (for example x264's build number).",
+    "rav1e: `cargo update cc` re-resolved the cc build dependency at build time (see extra_inputs: best determination cc 1.4.5). All crates linked into ffmpeg.exe come from rav1e's committed Cargo.lock, which the archive vendors with checksum verification.",
+    "Only bin/ffmpeg.exe is redistributed by ScoutMind (ffprobe.exe and ffplay.exe from the same zip are not shipped); the same sources cover all three."
+  ]
+}
