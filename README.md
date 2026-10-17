@@ -21,6 +21,8 @@ ScoutMind for Windows, sold through the Microsoft Store, includes some open-sour
 
 The Mac releases hold a single `.zip` archive and its `.sha256` file. The same two archives also travel inside the app, under `ScoutMind.app/Contents/Resources/third_party/`. The libraries are separate files inside the app (`ScoutMind.app/Contents/Frameworks/cv2/__dot__dylibs/` for the OpenCV FFmpeg libraries and `Contents/Frameworks/bin/ffmpeg` for the program); ScoutMind does not check them when it runs.
 
+The OpenCV Mac archive (`scoutmind-opencv-4.9.0.80-mac-arm64-lgpl-corresponding-source.zip`) is the original build archive with one change. The build computer's user name, home folder and host name, which appeared in its generated configuration files and build receipts, were replaced by the neutral placeholders `builder`, `/Users/builder` and `build-host.local`, and `INPUT-MANIFEST.json` was updated to match. The upstream sources and the build recipe are byte-for-byte unchanged, and the receipts still record the same wheel and source checksums. The accepted-configure receipt still records the checksum of `CMakeCache.txt` as the build produced it, so that one file no longer matches it.
+
 For the Mac beta, the same rights apply as for Windows: you may modify the LGPL-licensed FFmpeg libraries and use your modified version with ScoutMind, and you may reverse-engineer the parts of ScoutMind needed to debug such modifications. The beta is signed with a local (ad hoc) signature and is not Apple-notarized, so macOS may ask you to sign the app again after you replace a file.
 
 Each release holds a single `.tar` archive and its `.sha256` file. Inside each archive you'll find:
